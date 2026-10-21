@@ -7,10 +7,10 @@ VT-Pilot®
 [col1-link]
 https://voyisl.com/zh/products/#vt-pilot
 [col1-item]
-VT-AVM|https://voyisl.com/zh/products/vt-avm/|全景环视
-VT-APS|https://voyisl.com/zh/products/vt-aps/|全场景智能泊车辅助
-VT-FVC|https://voyisl.com/zh/products/vt-fvc/|ADAS 前视一体机
-VT-Vulcan®|https://voyisl.com/zh/products/vt-vulcan/|行泊一体系统
+VT-AVM|vt-avm.html|全景环视
+VT-APS|vt-aps.html|全场景智能泊车辅助
+VT-FVC|vt-fvc.html|ADAS 前视一体机
+VT-Vulcan®|vt-vulcan.html|行泊一体系统
 [col2-title]
 VT-Cockpit®
 [col2-en]
@@ -18,13 +18,13 @@ VT-Cockpit®
 [col2-link]
 https://voyisl.com/zh/products/#vt-cockpit
 [col2-item]
-VT-DVR|https://voyisl.com/zh/products/vt-dvr/|行车记录仪
-VT-CMS（商）|https://voyisl.com/zh/products/vt-cms-cv/|电子外后视镜
-VT-DMS|https://voyisl.com/zh/products/vt-dms/|驾驶员监控
-VT-CMS（乘）|https://voyisl.com/zh/products/vt-cms-pv/|电子外后视镜
-VT-Smart Lighting|https://voyisl.com/zh/products/vt-smart-lighting/|智慧照明
-VT-E-Mirror|https://voyisl.com/zh/products/vt-e-mirror/|流媒体后视镜
-VT-HUD|https://voyisl.com/zh/products/vt-hud/|抬头显示
+VT-DVR|vt-dvr.html|行车记录仪
+VT-CMS（商）|vt-cms-cv.html|电子外后视镜
+VT-DMS|vt-dms.html|驾驶员监控
+VT-CMS（乘）|vt-cms-pv.html|电子外后视镜
+VT-Smart Lighting|vt-smart-lighting.html|智慧照明
+VT-E-Mirror|vt-e-mirror.html|流媒体后视镜
+VT-HUD|vt-hud.html|抬头显示
 [col3-title]
 VT-Sensing
 [col3-en]

@@ -7,10 +7,10 @@ Intelligent Driving
 [col1-link]
 https://voyisl.com/zh/products/#vt-pilot
 [col1-item]
-VT-AVM|https://voyisl.com/zh/products/vt-avm/|Surround View
-VT-APS|https://voyisl.com/zh/products/vt-aps/|Automated Parking Assist
-VT-FVC|https://voyisl.com/zh/products/vt-fvc/|ADAS Front Camera
-VT-Vulcan®|https://voyisl.com/zh/products/vt-vulcan/|Drive-Park Integrated
+VT-AVM|vt-avm.html|Surround View
+VT-APS|vt-aps.html|Automated Parking Assist
+VT-FVC|vt-fvc.html|ADAS Front Camera
+VT-Vulcan®|vt-vulcan.html|Drive-Park Integrated
 [col2-title]
 VT-Cockpit®
 [col2-en]
@@ -18,13 +18,13 @@ Intelligent Cockpit
 [col2-link]
 https://voyisl.com/zh/products/#vt-cockpit
 [col2-item]
-VT-DVR|https://voyisl.com/zh/products/vt-dvr/|Driving Recorder
-VT-CMS (CV)|https://voyisl.com/zh/products/vt-cms-cv/|Electronic Side Mirror
-VT-DMS|https://voyisl.com/zh/products/vt-dms/|Driver Monitoring
-VT-CMS (PV)|https://voyisl.com/zh/products/vt-cms-pv/|Electronic Side Mirror
-VT-Smart Lighting|https://voyisl.com/zh/products/vt-smart-lighting/|Smart Lighting
-VT-E-Mirror|https://voyisl.com/zh/products/vt-e-mirror/|Streaming Rearview Mirror
-VT-HUD|https://voyisl.com/zh/products/vt-hud/|Head-Up Display
+VT-DVR|vt-dvr.html|Driving Recorder
+VT-CMS (CV)|vt-cms-cv.html|Electronic Side Mirror
+VT-DMS|vt-dms.html|Driver Monitoring
+VT-CMS (PV)|vt-cms-pv.html|Electronic Side Mirror
+VT-Smart Lighting|vt-smart-lighting.html|Smart Lighting
+VT-E-Mirror|vt-e-mirror.html|Streaming Rearview Mirror
+VT-HUD|vt-hud.html|Head-Up Display
 [col3-title]
 VT-Sensing
 [col3-en]
