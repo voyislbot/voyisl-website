@@ -452,7 +452,7 @@ function Build-Header([string]$LanguageKey, [string]$File) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>$($u.Brand) - $($File)</title>
-<link rel="stylesheet" href="${pre}assets/css/style.css?v=37">
+<link rel="stylesheet" href="${pre}assets/css/style.css?v=38">
 </head>
 <body>
 <header class="site-header">

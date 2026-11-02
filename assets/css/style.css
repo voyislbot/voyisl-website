@@ -56,6 +56,7 @@ ul{list-style:none}
 .hero h1{font-size:56px;letter-spacing:14px;margin:26px 0 18px;font-weight:800}
 .hero h1.en-long{font-size:44px;letter-spacing:3px;line-height:1.4}
 .hero .sub{font-size:18px;letter-spacing:5px;color:#d8d2c8;font-weight:300}
+.hero .sub.sub-long{max-width:940px;margin:0 auto;font-size:15px;line-height:1.9;letter-spacing:.8px}
 .hero .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:#cfc8bc;font-size:12px;letter-spacing:3px;animation:bob 2s infinite}
 @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
 /* ===== about ===== */
@@ -150,10 +151,12 @@ ul{list-style:none}
   .form-grid{grid-template-columns:1fr}
 }
 @media(max-width:560px){
+  .hero-inner{padding-left:16px;padding-right:16px}
   .honor-grid{grid-template-columns:1fr}
   .hero h1{font-size:28px}
   .hero h1.en-long{font-size:22px;letter-spacing:1px}
   .hero .sub{font-size:14px;letter-spacing:3px}
+  .hero .sub.sub-long{font-size:12.5px;line-height:1.8;letter-spacing:0}
   .sec{padding:64px 0}
 }
 
