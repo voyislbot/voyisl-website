@@ -30,7 +30,7 @@ $ui = @{
         Short = "简"; Trad = "繁"; English = "EN"
         Overview = "产品概览"; Capabilities = "核心能力"; Scenarios = "应用方向"; Related = "同系列产品"
         Back = "返回"; Contact = "联系我们"; Custom = "产品功能和配置可根据车型与项目需求定制，具体方案以项目评估为准。"
-        Quick = "快速导航"; Links = "友情链接"; Brand = "寅家科技"; QR = "扫描二维码，关注寅家科技官方公众号"
+        Quick = "快速导航"; Brand = "寅家科技"; QR = "扫描二维码，关注寅家科技官方公众号"
         Honors = "企业荣誉"
     }
     tw = @{
@@ -39,7 +39,7 @@ $ui = @{
         Short = "簡"; Trad = "繁"; English = "EN"
         Overview = "產品概覽"; Capabilities = "核心能力"; Scenarios = "應用方向"; Related = "同系列產品"
         Back = "返回"; Contact = "聯絡我們"; Custom = "產品功能與配置可根據車型及專案需求定製，具體方案以專案評估為準。"
-        Quick = "快速導覽"; Links = "友情連結"; Brand = "寅家科技"; QR = "掃描二維碼，關注寅家科技官方公眾號"
+        Quick = "快速導覽"; Brand = "寅家科技"; QR = "掃描二維碼，關注寅家科技官方公眾號"
         Honors = "企業榮譽"
     }
     en = @{
@@ -48,7 +48,7 @@ $ui = @{
         Short = "简"; Trad = "繁"; English = "EN"
         Overview = "Product Overview"; Capabilities = "Core Capabilities"; Scenarios = "Application Scenarios"; Related = "Related Products"
         Back = "Back to"; Contact = "Contact Us"; Custom = "Features and configurations can be adapted to vehicle and project requirements. The final solution is subject to project evaluation."
-        Quick = "Quick Links"; Links = "Related Links"; Brand = "VOYISL"; QR = "Scan the QR code to follow our official account"
+        Quick = "Quick Links"; Brand = "VOYISL"; QR = "Scan the QR code to follow our official account"
         Honors = "Recognition"
     }
 }
@@ -452,7 +452,7 @@ function Build-Header([string]$LanguageKey, [string]$File) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>$($u.Brand) - $($File)</title>
-<link rel="stylesheet" href="${pre}assets/css/style.css?v=36">
+<link rel="stylesheet" href="${pre}assets/css/style.css?v=37">
 </head>
 <body>
 <header class="site-header">
@@ -501,11 +501,6 @@ function Build-Footer([string]$LanguageKey) {
         <a href="news.html">$($u.News)</a><a href="esg.html">$($u.ESG)</a>
         <a href="honors.html">$($u.Honors)</a>
         <a href="join.html">$($u.Join)</a>
-      </div>
-      <div>
-        <h5>$($u.Links)</h5>
-        <a href="http://www.yu-zhou.com/" target="_blank" rel="noopener">$(if($LanguageKey -eq 'en'){'Shanghai Yu-Zhou Electric'}elseif($LanguageKey -eq 'tw'){'上海宇宙電器'}else{'上海宇宙电器'})</a>
-        <a href="http://wuhuruishida.com/" target="_blank" rel="noopener">$(if($LanguageKey -eq 'en'){'Wuhu Ruishida Optics'}elseif($LanguageKey -eq 'tw'){'瑞視達光學'}else{'瑞视达光学'})</a>
       </div>
     </div>
     <div class="footer-bottom">
