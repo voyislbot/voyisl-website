@@ -111,7 +111,7 @@ def content_about(lang, pre):
         tl = [("初心元年","海归技术团队创业，较早一批国产智能辅助驾驶产品创业公司；确立基于视觉感知的软硬一体化产品战略；国内较早进行BEV架构应用。"),
               ("产品问世","3D全景环视产品发布；APA自动泊车辅助和AVP代客泊车系统发布；成为丰田-雷克萨斯视觉感知产品国产合作伙伴。"),
               ("量产突破","智能辅助驾驶系统出货量突破10万套；认证上海市高新技术企业；平台化产品VT-Pilot®具备雏形。"),
-              ("走出国门","实现智能辅助驾驶系统出口目标；量产产品覆盖车型超一百款；嘉兴、芜湖智能生产基地落成。"),
+              ("走出国门","实现智能辅助驾驶系统出口目标；嘉兴、芜湖智能生产基地落成。"),
               ("蓄力爆发","加速VT-Cockpit®座舱产品布局；VT-Vulcan®域控系列发布；与梅克朗集团中国子公司合资；业务拓展至欧洲、南/北美、东南亚、日韩。"),
               ("载誉前行","国家高新技术企业认定；教育部科学研究优秀成果奖二等奖；2026福布斯中国行业发展领创者；2026中国出行科技全球化新锐品牌TOP10。")]
         p1 = "寅家科技创立于2013年，依托全栈自研的核心技术，实现智能感知、智能决策与控制技术在多领域通用智能体的规模化应用。"
@@ -122,7 +122,7 @@ def content_about(lang, pre):
         tl = [("初心元年","海歸技術團隊創業，較早一批國產智能輔助駕駛產品創業公司；確立基於視覺感知的軟硬一體化產品戰略；國內較早進行BEV架構應用。"),
               ("產品問世","3D全景環視產品發佈；APA自動泊車輔助和AVP代客泊車系統發佈；成為豐田-雷克薩斯視覺感知產品國產合作夥伴。"),
               ("量產突破","智能輔助駕駛系統出貨量突破10萬套；認證上海市高新技術企業；平台化產品VT-Pilot®具備雛形。"),
-              ("走出國門","實現智能輔助駕駛系統出口目標；量產產品覆蓋車型超一百款；嘉興、蕪湖智能生產基地落成。"),
+              ("走出國門","實現智能輔助駕駛系統出口目標；嘉興、蕪湖智能生產基地落成。"),
               ("蓄力爆發","加速VT-Cockpit®座艙產品佈局；VT-Vulcan®域控系列發佈；與梅克朗集團中國子公司合資；業務拓展至歐洲、南/北美、東南亞、日韓。"),
               ("載譽前行","國家高新技術企業認定；教育部科學研究優秀成果獎二等獎；2026福布斯中國行業發展領創者；2026中國出行科技全球化新銳品牌TOP10。")]
         p1 = "寅家科技創立於2013年，依託全棧自研的核心技術，實現智能感知、智能決策與控制技術在多領域通用智能體的規模化應用。"
@@ -133,7 +133,7 @@ def content_about(lang, pre):
         tl = [("The Beginning","Founded by a returnee technical team, among the first domestic startups in intelligent driving; established a software-hardware integrated strategy based on visual perception."),
               ("Product Launch","Released 3D surround-view, APA automated parking assist and AVP valet parking systems; became a domestic partner for Toyota-Lexus visual perception products."),
               ("Mass Production","Intelligent driving system shipments exceeded 100,000 sets; certified as a Shanghai High-Tech Enterprise; formed the VT-Pilot® platform."),
-              ("Going Global","Achieved export targets; mass-production products covered over 100 vehicle models; established Jiaxing and Wuhu smart manufacturing bases."),
+              ("Going Global","Achieved export targets; established Jiaxing and Wuhu smart manufacturing bases."),
               ("Expansion","Accelerated VT-Cockpit® cabin products; launched VT-Vulcan® domain controllers; joint venture with MEKRA Lang China; expanded to Europe, Americas, Southeast Asia, Japan and Korea."),
               ("Recognition","Certified National High-Tech Enterprise; awarded by the Ministry of Education; named a 2026 Forbes China industry pioneer and a GoGlobal TOP10 brand.")]
         p1 = "Founded in 2013, VOYISL delivers large-scale applications of intelligent perception, decision and control technologies across multiple domains through its full-stack self-developed core technologies."
@@ -160,21 +160,48 @@ def content_about(lang, pre):
 
 def content_tech(lang, pre):
     if lang == "cn":
-        intro = "以智能感知、智能决策与控制技术，赋能多领域通用智能体规模化应用"
+        intro = (
+            "<p>技术是我们业务的核心支柱。自成立以来，我们始终专注于技术的创新、开发与迭代，"
+            "技术能力覆盖视觉感知、定位导航、规划及控制全链条。</p>"
+            "<p>我们坚持软硬件一体化开发模式，面向不同整车车型提供可定制化解决方案与产品，"
+            "兼顾功能需求、算力资源、系统可靠性与成本管控。我们打造了以算法为底座、软硬件一体化的 "
+            "VT‑Navigara 技术平台。该平台具备可复用、可迭代、可扩展的架构优势：一方面可以高效将底层"
+            "技术落地为可量产的解决方案及产品；另一方面，能够以较低的增量开发成本，把成熟技术能力"
+            "拓展至更多元的应用场景。</p>"
+        )
         s1 = ("智能感知","VT-Sensing / VT-Navi","多目摄像头与深度学习算法，实现目标识别、车道线检测、盲区监测与全景环视。")
         s2 = ("融合定位","VT-Navi","融合视觉、惯导、轮速等多源信息，构建高精度定位与建图能力。")
         s3 = ("决策控制","VT-Vulcan®","基于域控平台与车规级安全架构，统筹规划、决策与执行。")
         cams = [("RVC摄像头","1M-2M"),("AVM/APA摄像头","1M-3M"),("FVC前视一体机","8M"),("SVC/CMS摄像头","2M-3M/3M"),("DMS摄像头","2M-3M"),("OMS摄像头","5M")]
         h2, h2c = "技术路线", "智能感知产品线"
     elif lang == "tw":
-        intro = "以智能感知、智能決策與控制技術，賦能多領域通用智能體規模化應用"
+        intro = (
+            "<p>技術是我們業務的核心支柱。自成立以來，我們始終專注於技術的創新、開發與迭代，"
+            "技術能力覆蓋視覺感知、定位導航、規劃及控制全鏈條。</p>"
+            "<p>我們堅持軟硬件一體化開發模式，面向不同整車車型提供可定製化解決方案與產品，"
+            "兼顧功能需求、算力資源、系統可靠性與成本管控。我們打造了以算法為底座、軟硬件一體化的 "
+            "VT‑Navigara 技術平台。該平台具備可複用、可迭代、可擴展的架構優勢：一方面可以高效將底層"
+            "技術落地為可量產的解決方案及產品；另一方面，能夠以較低的增量開發成本，把成熟技術能力"
+            "拓展至更多元的應用場景。</p>"
+        )
         s1 = ("智能感知","VT-Sensing / VT-Navi","多目相機與深度學習演算法，實現目標識別、車道線檢測、盲區監測與全景環視。")
         s2 = ("融合定位","VT-Navi","融合視覺、慣導、輪速等多源資訊，構建高精度定位與建圖能力。")
         s3 = ("決策控制","VT-Vulcan®","基於域控平台與車規級安全架構，統籌規劃、決策與執行。")
         cams = [("RVC攝像頭","1M-2M"),("AVM/APA攝像頭","1M-3M"),("FVC前視一體機","8M"),("SVC/CMS攝像頭","2M-3M/3M"),("DMS攝像頭","2M-3M"),("OMS攝像頭","5M")]
         h2, h2c = "技術路線", "智能感知產品線"
     else:
-        intro = "Empowering large-scale application of general intelligent agents with perception, decision and control technologies"
+        intro = (
+            "<p>Technology is a core pillar of our business. Since our establishment, we have remained "
+            "focused on technology innovation, development and iteration, with capabilities spanning "
+            "the full chain of visual perception, positioning and navigation, planning and control.</p>"
+            "<p>We adopt an integrated hardware and software development model, providing customizable "
+            "solutions and products for different vehicle models while balancing functional requirements, "
+            "computing resources, system reliability and cost control. We have built VT-Navigara, an "
+            "integrated hardware and software technology platform built on an algorithmic foundation. "
+            "With a reusable, iterable and scalable architecture, the platform efficiently turns underlying "
+            "technologies into production-ready solutions and products, while extending proven capabilities "
+            "to a broader range of applications at low incremental development cost.</p>"
+        )
         s1 = ("Visual Perception","VT-Sensing / VT-Navi","Multi-camera perception with deep learning for object detection, lane marking, blind-spot monitoring and surround view.")
         s2 = ("Fusion Positioning","VT-Navi","Fusing vision, inertial and wheel-speed data for high-accuracy localization and mapping.")
         s3 = ("Decision Control","VT-Vulcan®","Domain controller platform with automotive-grade safety architecture for planning, decision and execution.")
@@ -189,7 +216,7 @@ def content_tech(lang, pre):
     return """<section class="sec" style="background:#fff">
   <div class="wrap">
     <div class="sec-head reveal"><p class="en">Technology Roadmap</p><h2>%s</h2><span class="bar"></span></div>
-    <p class="reveal" style="text-align:center;color:var(--muted);max-width:760px;margin:0 auto 44px">%s</p>
+    <div class="tech-intro reveal">%s</div>
     <div class="tech-grid">%s</div>
     <div class="sec-head reveal" style="margin-top:72px"><p class="en">Camera Lineup</p><h2>%s</h2><span class="bar"></span></div>
     <div class="cam-grid">%s</div>
@@ -201,7 +228,7 @@ def content_news(lang, pre):
         items = [("07","2026","聚力巴西，深化南美布局 | 寅家科技携手梅克朗、Metagal 亮相梅赛德斯-奔驰技术日","深化海外布局，携手产业链伙伴共同拓展南美及欧洲市场。"),
                  ("06","2026","GB 47955新规来袭，寅家靠“眼·脑·身”拿下L2安全考题","以“眼·脑·身”技术框架响应新规要求，保障 L2 安全。"),
                  ("05","2026","寅家WAIC时刻 | 亮出“眼·脑·身”物理AI量产解决方案","亮相世界人工智能大会 WAIC，展示量产级物理 AI 解决方案。"),
-                 ("05","2026","Meet AI, Meet VOYISL | 寅家集团邀您参加 WAIC 2026","与全球伙伴共赴 AI 盛会，见证智能出行新未来。"),
+                 ("05","2026","Meet AI, Meet VOYISL | 公司邀您参加 WAIC 2026","与全球伙伴共赴 AI 盛会，见证智能出行新未来。"),
                  ("04","2026","第一财经专访 | 对话寅家科技CEO陈寅仁","从技术验证走向规模量产，畅谈智能驾驶行业趋势。"),
                  ("03","2026","寅家科技荣获【2026中国出行科技全球化新锐品牌TOP10】","凭借量产能力与海外交付表现荣登年度新锐品牌榜单。")]
         h2 = "企业动态"
@@ -209,7 +236,7 @@ def content_news(lang, pre):
         items = [("07","2026","聚力巴西，深化南美佈局 | 寅家科技攜手梅克朗、Metagal 亮相梅賽德斯-賓士技術日","深化海外佈局，攜手產業鏈夥伴共同拓展南美及歐洲市場。"),
                  ("06","2026","GB 47955新規來襲，寅家靠「眼·腦·身」拿下L2安全考題","以「眼·腦·身」技術框架響應新規要求，保障 L2 安全。"),
                  ("05","2026","寅家WAIC時刻 | 亮出「眼·腦·身」物理AI量產解決方案","亮相世界人工智慧大會 WAIC，展示量產級物理 AI 解決方案。"),
-                 ("05","2026","Meet AI, Meet VOYISL | 寅家集團邀您參加 WAIC 2026","與全球夥伴共赴 AI 盛會，見證智慧出行新未來。"),
+                 ("05","2026","Meet AI, Meet VOYISL | 公司邀您參加 WAIC 2026","與全球夥伴共赴 AI 盛會，見證智慧出行新未來。"),
                  ("04","2026","第一財經專訪 | 對話寅家科技CEO陳寅仁","從技術驗證走向規模量產，暢談智慧駕駛行業趨勢。"),
                  ("03","2026","寅家科技榮獲【2026中國出行科技全球化新銳品牌TOP10】","憑藉量產能力與海外交付表現榮登年度新銳品牌榜單。")]
         h2 = "企業動態"
