@@ -69,6 +69,13 @@ ul{list-style:none}
 .about .feat{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
 .about .feat div{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:#fff;font-size:13.5px;color:#444}
 .about .feat b{color:var(--gold-dark);display:block;font-size:15px;margin-bottom:2px}
+.about-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.about-metrics-page{margin-top:20px}
+.metric-card{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 16px;align-content:center;border:1px solid var(--line);border-radius:12px;background:#fff;padding:18px 20px;transition:.3s}
+.metric-card:hover{box-shadow:var(--shadow);border-color:var(--gold-light);transform:translateY(-3px)}
+.metric-card strong{grid-row:1/3;align-self:center;font-size:26px;line-height:1.1;color:var(--gold-dark);letter-spacing:.5px;white-space:nowrap}
+.metric-card span{font-size:11.5px;line-height:1.5;color:#8d877e;letter-spacing:.2px;text-wrap:balance}
+.metric-card p{margin:0;font-size:13.5px;line-height:1.55;color:#444;text-wrap:balance}
 .about-visual{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(150deg,#1b1f26,#14161a);color:#fff;padding:34px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
 .about-visual svg{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
 .about-visual .cap{position:relative;z-index:2}
@@ -155,6 +162,7 @@ ul{list-style:none}
 }
 @media(max-width:560px){
   .tech-intro{font-size:13.5px;line-height:1.9;text-align:left}
+  .about-metrics{grid-template-columns:1fr}
   .hero-inner{padding-left:16px;padding-right:16px}
   .honor-grid{grid-template-columns:1fr}
   .hero h1{font-size:28px}
