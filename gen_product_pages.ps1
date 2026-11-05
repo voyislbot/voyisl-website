@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -57,8 +57,8 @@ $products = @(
     @{
         File = "vt-avm.html"; Category = "pilot"; Image = "app-pilot.webp"
         cn = @{
-            Name = "VT-AVM"; Short = "全景环视"
-            Summary = "VT-AVM 通过多路摄像头采集车身周围画面，构建连续、直观的全景环视视野，帮助驾驶者在低速行驶与泊车过程中识别车辆周边障碍物和视野盲区。"
+            Name = "AVM"; Short = "全景环视"
+            Summary = "AVM 通过多路摄像头采集车身周围画面，构建连续、直观的全景环视视野，帮助驾驶者在低速行驶与泊车过程中识别车辆周边障碍物和视野盲区。"
             Features = @(
                 @("多路画面融合", "融合前、后、左、右多路摄像头画面，形成整车周边全景视野。"),
                 @("多视角辅助", "围绕低速会车、狭窄道路和泊车场景提供多种环视观察方式。"),
@@ -67,8 +67,8 @@ $products = @(
             Apps = @("狭窄道路低速通行", "泊车与挪车辅助", "车身周边盲区观察")
         }
         tw = @{
-            Name = "VT-AVM"; Short = "全景環視"
-            Summary = "VT-AVM 透過多路攝影機採集車身周圍畫面，構建連續、直觀的全景環視視野，協助駕駛者在低速行駛與泊車過程中識別車輛周邊障礙物和視野盲區。"
+            Name = "AVM"; Short = "全景環視"
+            Summary = "AVM 透過多路攝影機採集車身周圍畫面，構建連續、直觀的全景環視視野，協助駕駛者在低速行駛與泊車過程中識別車輛周邊障礙物和視野盲區。"
             Features = @(
                 @("多路畫面融合", "融合前、後、左、右多路攝影機畫面，形成整車周邊全景視野。"),
                 @("多視角輔助", "圍繞低速會車、狹窄道路和泊車場景提供多種環視觀察方式。"),
@@ -77,8 +77,8 @@ $products = @(
             Apps = @("狹窄道路低速通行", "泊車與挪車輔助", "車身周邊盲區觀察")
         }
         en = @{
-            Name = "VT-AVM"; Short = "Surround View"
-            Summary = "VT-AVM combines images from multiple cameras to create a continuous surround-view perspective, helping drivers identify nearby obstacles and blind spots during low-speed driving and parking."
+            Name = "AVM"; Short = "Surround View"
+            Summary = "AVM combines images from multiple cameras to create a continuous surround-view perspective, helping drivers identify nearby obstacles and blind spots during low-speed driving and parking."
             Features = @(
                 @("Multi-camera fusion", "Combines front, rear, left and right camera views into a complete perspective around the vehicle."),
                 @("Multiple viewpoints", "Provides different viewing options for narrow roads, low-speed maneuvers and parking."),
@@ -90,8 +90,8 @@ $products = @(
     @{
         File = "vt-aps.html"; Category = "pilot"; Image = "app-pilot.webp"
         cn = @{
-            Name = "VT-APS"; Short = "全场景智能泊车辅助"
-            Summary = "VT-APS 围绕车位识别、泊车路径规划与过程辅助，为复杂停车场景提供系统化泊车支持，提升低速泊车过程的可控性与便利性。"
+            Name = "APA / RPA / HPA / AVP"; Short = "全场景智能泊车辅助"
+            Summary = "APA / RPA / HPA / AVP 围绕车位识别、泊车路径规划与过程辅助，为复杂停车场景提供系统化泊车支持，提升低速泊车过程的可控性与便利性。"
             Features = @(
                 @("车位场景识别", "结合车辆感知信息识别可用车位和周边环境。"),
                 @("泊车路径规划", "根据车位形态与车辆位置规划泊车路径，支持项目功能配置。"),
@@ -100,8 +100,8 @@ $products = @(
             Apps = @("水平与垂直车位", "狭窄停车场", "低速泊车与挪车")
         }
         tw = @{
-            Name = "VT-APS"; Short = "全場景智能泊車輔助"
-            Summary = "VT-APS 圍繞車位識別、泊車路徑規劃與過程輔助，為複雜停車場景提供系統化泊車支援，提升低速泊車過程的可控性與便利性。"
+            Name = "APA / RPA / HPA / AVP"; Short = "全場景智能泊車輔助"
+            Summary = "APA / RPA / HPA / AVP 圍繞車位識別、泊車路徑規劃與過程輔助，為複雜停車場景提供系統化泊車支援，提升低速泊車過程的可控性與便利性。"
             Features = @(
                 @("車位場景識別", "結合車輛感知資訊識別可用車位和周邊環境。"),
                 @("泊車路徑規劃", "根據車位形態與車輛位置規劃泊車路徑，支援專案功能配置。"),
@@ -110,8 +110,8 @@ $products = @(
             Apps = @("水平與垂直車位", "狹窄停車場", "低速泊車與挪車")
         }
         en = @{
-            Name = "VT-APS"; Short = "Automated Parking Assist"
-            Summary = "VT-APS provides systematic support for complex parking scenarios through parking-space recognition, path planning and process assistance, improving control and convenience at low speed."
+            Name = "APA / RPA / HPA / AVP"; Short = "Automated Parking Assist"
+            Summary = "APA / RPA / HPA / AVP provides systematic support for complex parking scenarios through parking-space recognition, path planning and process assistance, improving control and convenience at low speed."
             Features = @(
                 @("Parking-space recognition", "Uses vehicle perception to identify available spaces and the surrounding environment."),
                 @("Parking trajectory planning", "Plans a parking path based on the space layout and vehicle position."),
@@ -123,8 +123,8 @@ $products = @(
     @{
         File = "vt-fvc.html"; Category = "pilot"; Image = "app-pilot.webp"
         cn = @{
-            Name = "VT-FVC"; Short = "ADAS 前视一体机"
-            Summary = "VT-FVC 将前视摄像头与视觉算法集成于一体化产品，为车辆提供前向目标与车道环境感知能力，是智能辅助驾驶功能的重要感知入口。"
+            Name = "FVC"; Short = "ADAS 前视一体机"
+            Summary = "FVC 将前视摄像头与视觉算法集成于一体化产品，为车辆提供前向目标与车道环境感知能力，是智能辅助驾驶功能的重要感知入口。"
             Features = @(
                 @("前向视觉感知", "面向车辆前方道路环境采集图像并完成视觉识别。"),
                 @("目标与车道识别", "识别前方车辆、行人及车道线等关键交通元素。"),
@@ -133,8 +133,8 @@ $products = @(
             Apps = @("乘用车辅助驾驶", "商用车安全辅助", "前向感知系统集成")
         }
         tw = @{
-            Name = "VT-FVC"; Short = "ADAS 前視一體機"
-            Summary = "VT-FVC 將前視攝影機與視覺演算法整合於一體化產品，為車輛提供前向目標與車道環境感知能力，是智能輔助駕駛功能的重要感知入口。"
+            Name = "FVC"; Short = "ADAS 前視一體機"
+            Summary = "FVC 將前視攝影機與視覺演算法整合於一體化產品，為車輛提供前向目標與車道環境感知能力，是智能輔助駕駛功能的重要感知入口。"
             Features = @(
                 @("前向視覺感知", "面向車輛前方道路環境採集影像並完成視覺識別。"),
                 @("目標與車道識別", "識別前方車輛、行人及車道線等關鍵交通元素。"),
@@ -143,8 +143,8 @@ $products = @(
             Apps = @("乘用車輔助駕駛", "商用車安全輔助", "前向感知系統整合")
         }
         en = @{
-            Name = "VT-FVC"; Short = "ADAS Front Camera"
-            Summary = "VT-FVC integrates a forward-facing camera and vision algorithms in a compact product, providing perception of vehicles, pedestrians and lane markings for intelligent driving assistance."
+            Name = "FVC"; Short = "ADAS Front Camera"
+            Summary = "FVC integrates a forward-facing camera and vision algorithms in a compact product, providing perception of vehicles, pedestrians and lane markings for intelligent driving assistance."
             Features = @(
                 @("Forward vision", "Captures and interprets the road environment ahead of the vehicle."),
                 @("Target and lane recognition", "Detects key road elements such as vehicles, pedestrians and lane markings."),
@@ -189,8 +189,8 @@ $products = @(
     @{
         File = "vt-dvr.html"; Category = "cockpit"; Image = "app-cockpit.webp"
         cn = @{
-            Name = "VT-DVR"; Short = "行车记录仪"
-            Summary = "VT-DVR 面向车载场景提供道路影像记录能力，可与座舱电子方案协同布置，为日常行车和项目定制提供稳定的影像记录支持。"
+            Name = "DVR"; Short = "行车记录仪"
+            Summary = "DVR 面向车载场景提供道路影像记录能力，可与座舱电子方案协同布置，为日常行车和项目定制提供稳定的影像记录支持。"
             Features = @(
                 @("行车影像记录", "记录车辆前方道路画面，便于日常查看与事件回溯。"),
                 @("座舱一体化集成", "可根据车型内饰与座舱电子架构进行方案适配。"),
@@ -199,8 +199,8 @@ $products = @(
             Apps = @("乘用车座舱", "商用车行车记录", "项目定制集成")
         }
         tw = @{
-            Name = "VT-DVR"; Short = "行車記錄儀"
-            Summary = "VT-DVR 面向車載場景提供道路影像記錄能力，可與座艙電子方案協同佈置，為日常行車和專案定製提供穩定的影像記錄支援。"
+            Name = "DVR"; Short = "行車記錄儀"
+            Summary = "DVR 面向車載場景提供道路影像記錄能力，可與座艙電子方案協同佈置，為日常行車和專案定製提供穩定的影像記錄支援。"
             Features = @(
                 @("行車影像記錄", "記錄車輛前方道路畫面，便於日常查看與事件回溯。"),
                 @("座艙一體化整合", "可根據車型內飾與座艙電子架構進行方案適配。"),
@@ -209,8 +209,8 @@ $products = @(
             Apps = @("乘用車座艙", "商用車行車記錄", "專案定製整合")
         }
         en = @{
-            Name = "VT-DVR"; Short = "Driving Recorder"
-            Summary = "VT-DVR provides in-vehicle road recording and can be integrated with cabin electronics for daily driving, event review and vehicle-specific programs."
+            Name = "DVR"; Short = "Driving Recorder"
+            Summary = "DVR provides in-vehicle road recording and can be integrated with cabin electronics for daily driving, event review and vehicle-specific programs."
             Features = @(
                 @("Road recording", "Records the forward road view for daily review and event reference."),
                 @("Cabin integration", "Adapts to vehicle interiors and cabin electronics architectures."),
@@ -222,8 +222,8 @@ $products = @(
     @{
         File = "vt-cms-cv.html"; Category = "cockpit"; Image = "cam-svc-cms.webp"
         cn = @{
-            Name = "VT-CMS（商）"; Short = "电子外后视镜"
-            Summary = "面向商用车场景，VT-CMS 以摄像头与车内显示屏替代传统光学后视镜，帮助扩展侧后方视野，并改善夜间、雨雾等复杂环境下的观察体验。"
+            Name = "CMS（商）"; Short = "摄像头监控系统"
+            Summary = "面向商用车场景，CMS 以摄像头与车内显示屏替代传统光学后视镜，帮助扩展侧后方视野，并改善夜间、雨雾等复杂环境下的观察体验。"
             Features = @(
                 @("数字化侧后视野", "通过摄像头采集并显示车辆侧后方画面，减少视野遮挡。"),
                 @("复杂环境观察", "针对夜间、雨雾与强光场景进行成像优化。"),
@@ -232,8 +232,8 @@ $products = @(
             Apps = @("客车", "卡车", "雨雾与夜间行车")
         }
         tw = @{
-            Name = "VT-CMS（商）"; Short = "電子外後視鏡"
-            Summary = "面向商用車場景，VT-CMS 以攝影機與車內顯示螢幕替代傳統光學後視鏡，協助擴展側後方視野，並改善夜間、雨霧等複雜環境下的觀察體驗。"
+            Name = "CMS（商）"; Short = "攝像頭監控系統"
+            Summary = "面向商用車場景，CMS 以攝影機與車內顯示螢幕替代傳統光學後視鏡，協助擴展側後方視野，並改善夜間、雨霧等複雜環境下的觀察體驗。"
             Features = @(
                 @("數位化側後視野", "透過攝影機採集並顯示車輛側後方畫面，減少視野遮擋。"),
                 @("複雜環境觀察", "針對夜間、雨霧與強光場景進行成像優化。"),
@@ -242,8 +242,8 @@ $products = @(
             Apps = @("客車", "卡車", "雨霧與夜間行車")
         }
         en = @{
-            Name = "VT-CMS (CV)"; Short = "Electronic Side Mirror"
-            Summary = "Designed for commercial vehicles, VT-CMS uses cameras and in-cabin displays to expand side-rear visibility and improve observation in rain, fog, low light and strong glare."
+            Name = "CMS (CV)"; Short = "Electronic Side Mirror"
+            Summary = "Designed for commercial vehicles, CMS uses cameras and in-cabin displays to expand side-rear visibility and improve observation in rain, fog, low light and strong glare."
             Features = @(
                 @("Digital side-rear view", "Captures and displays the area beside and behind the vehicle to reduce obstruction."),
                 @("Challenging-environment viewing", "Optimized imaging for night, rain, fog and strong-light conditions."),
@@ -255,8 +255,8 @@ $products = @(
     @{
         File = "vt-dms.html"; Category = "cockpit"; Image = "cam-dms.webp"
         cn = @{
-            Name = "VT-DMS"; Short = "驾驶员监控"
-            Summary = "VT-DMS 通过座舱摄像头持续观察驾驶员面部、视线与头部姿态等状态特征，为疲劳、分心及异常驾驶行为提供识别与预警支持。"
+            Name = "DMS"; Short = "驾驶员监控"
+            Summary = "DMS 通过座舱摄像头持续观察驾驶员面部、视线与头部姿态等状态特征，为疲劳、分心及异常驾驶行为提供识别与预警支持。"
             Features = @(
                 @("驾驶状态识别", "结合面部、视线和头部姿态等信息评估驾驶员状态。"),
                 @("疲劳与分心预警", "在检测到风险状态时提供视觉或声音提示，具体策略按项目配置。"),
@@ -265,8 +265,8 @@ $products = @(
             Apps = @("乘用车驾驶安全", "商用车长途驾驶", "车队安全管理")
         }
         tw = @{
-            Name = "VT-DMS"; Short = "駕駛員監控"
-            Summary = "VT-DMS 透過座艙攝影機持續觀察駕駛員面部、視線與頭部姿態等狀態特徵，為疲勞、分心及異常駕駛行為提供識別與預警支援。"
+            Name = "DMS"; Short = "駕駛員監控"
+            Summary = "DMS 透過座艙攝影機持續觀察駕駛員面部、視線與頭部姿態等狀態特徵，為疲勞、分心及異常駕駛行為提供識別與預警支援。"
             Features = @(
                 @("駕駛狀態識別", "結合面部、視線和頭部姿態等資訊評估駕駛員狀態。"),
                 @("疲勞與分心預警", "在檢測到風險狀態時提供視覺或聲音提示，具體策略按專案配置。"),
@@ -275,8 +275,8 @@ $products = @(
             Apps = @("乘用車駕駛安全", "商用車長途駕駛", "車隊安全管理")
         }
         en = @{
-            Name = "VT-DMS"; Short = "Driver Monitoring"
-            Summary = "VT-DMS uses an in-cabin camera to observe facial, gaze and head-pose signals, providing detection and warning support for fatigue, distraction and abnormal driving behavior."
+            Name = "DMS"; Short = "Driver Monitoring"
+            Summary = "DMS uses an in-cabin camera to observe facial, gaze and head-pose signals, providing detection and warning support for fatigue, distraction and abnormal driving behavior."
             Features = @(
                 @("Driver-state recognition", "Evaluates driver condition using facial, gaze and head-pose information."),
                 @("Fatigue and distraction alerts", "Provides visual or audible warnings according to project-specific strategies."),
@@ -288,8 +288,8 @@ $products = @(
     @{
         File = "vt-cms-pv.html"; Category = "cockpit"; Image = "cam-svc-cms.webp"
         cn = @{
-            Name = "VT-CMS（乘）"; Short = "电子外后视镜"
-            Summary = "面向乘用车场景，VT-CMS 通过数字化摄像头和显示屏拓展侧后方视野，并可结合整车造型与座舱方案进行一体化设计。"
+            Name = "CMS（乘）"; Short = "摄像头监控系统"
+            Summary = "面向乘用车场景，CMS 通过数字化摄像头和显示屏拓展侧后方视野，并可结合整车造型与座舱方案进行一体化设计。"
             Features = @(
                 @("乘用车数字视野", "以摄像头和车内显示屏提供侧后方观察画面。"),
                 @("造型与座舱协同", "可围绕整车造型、人机布置和显示界面进行定制。"),
@@ -298,8 +298,8 @@ $products = @(
             Apps = @("乘用车", "智能座舱", "车型平台定制")
         }
         tw = @{
-            Name = "VT-CMS（乘）"; Short = "電子外後視鏡"
-            Summary = "面向乘用車場景，VT-CMS 透過數位化攝影機和顯示螢幕拓展側後方視野，並可結合整車造型與座艙方案進行一體化設計。"
+            Name = "CMS（乘）"; Short = "攝像頭監控系統"
+            Summary = "面向乘用車場景，CMS 透過數位化攝影機和顯示螢幕拓展側後方視野，並可結合整車造型與座艙方案進行一體化設計。"
             Features = @(
                 @("乘用車數位視野", "以攝影機和車內顯示螢幕提供側後方觀察畫面。"),
                 @("造型與座艙協同", "可圍繞整車造型、人機佈置和顯示介面進行定製。"),
@@ -308,8 +308,8 @@ $products = @(
             Apps = @("乘用車", "智能座艙", "車型平台定製")
         }
         en = @{
-            Name = "VT-CMS (PV)"; Short = "Electronic Side Mirror"
-            Summary = "Designed for passenger vehicles, VT-CMS uses digital cameras and displays to expand side-rear visibility and can be integrated with vehicle styling and cabin architecture."
+            Name = "CMS (PV)"; Short = "Electronic Side Mirror"
+            Summary = "Designed for passenger vehicles, CMS uses digital cameras and displays to expand side-rear visibility and can be integrated with vehicle styling and cabin architecture."
             Features = @(
                 @("Digital passenger-vehicle view", "Provides side-rear observation through cameras and in-cabin displays."),
                 @("Styling and cabin integration", "Supports customization around vehicle design, human-machine layout and display interfaces."),
@@ -321,8 +321,8 @@ $products = @(
     @{
         File = "vt-smart-lighting.html"; Category = "cockpit"; Image = "app-cockpit.webp"
         cn = @{
-            Name = "VT-Smart Lighting"; Short = "智慧照明"
-            Summary = "VT-Smart Lighting 面向智能座舱提供场景化照明解决方案，将光学设计、动态光效与交互体验结合，支持迎宾、氛围和音乐律动等应用。"
+            Name = "SL"; Short = "智能照明"
+            Summary = "SL 面向智能座舱提供场景化照明解决方案，将光学设计、动态光效与交互体验结合，支持迎宾、氛围和音乐律动等应用。"
             Features = @(
                 @("舱内光影设计", "通过隧道光、投影灯和柔性光纤等方案营造层次化光效。"),
                 @("多模态交互", "支持按项目配置音频、手势与触控等交互方式。"),
@@ -331,8 +331,8 @@ $products = @(
             Apps = @("迎宾光效", "座舱氛围灯", "音乐律动场景")
         }
         tw = @{
-            Name = "VT-Smart Lighting"; Short = "智慧照明"
-            Summary = "VT-Smart Lighting 面向智能座艙提供場景化照明解決方案，將光學設計、動態光效與互動體驗結合，支援迎賓、氛圍和音樂律動等應用。"
+            Name = "SL"; Short = "智能照明"
+            Summary = "SL 面向智能座艙提供場景化照明解決方案，將光學設計、動態光效與互動體驗結合，支援迎賓、氛圍和音樂律動等應用。"
             Features = @(
                 @("艙內光影設計", "透過隧道光、投影燈和柔性光纖等方案營造層次化光效。"),
                 @("多模態互動", "支援按專案配置音訊、手勢與觸控等互動方式。"),
@@ -341,8 +341,8 @@ $products = @(
             Apps = @("迎賓光效", "座艙氛圍燈", "音樂律動場景")
         }
         en = @{
-            Name = "VT-Smart Lighting"; Short = "Smart Lighting"
-            Summary = "VT-Smart Lighting brings optical design, dynamic light effects and interaction together for intelligent cabin scenarios, including welcome, ambient and music-reactive experiences."
+            Name = "SL"; Short = "Smart Lighting"
+            Summary = "SL brings optical design, dynamic light effects and interaction together for intelligent cabin scenarios, including welcome, ambient and music-reactive experiences."
             Features = @(
                 @("Cabin light design", "Uses tunnel lighting, projection and flexible fiber solutions to create layered light effects."),
                 @("Multimodal interaction", "Supports audio, gesture and touch interaction according to project configuration."),
@@ -354,8 +354,8 @@ $products = @(
     @{
         File = "vt-e-mirror.html"; Category = "cockpit"; Image = "app-cockpit.webp"
         cn = @{
-            Name = "VT-E-Mirror"; Short = "流媒体后视镜"
-            Summary = "VT-E-Mirror 通过车尾摄像头采集后方画面，并显示在车内后视镜屏幕上，帮助扩展后方视野，改善乘员或货物遮挡以及复杂天气下的观察效果。"
+            Name = "E-Mirror"; Short = "流媒体后视镜"
+            Summary = "E-Mirror 通过车尾摄像头采集后方画面，并显示在车内后视镜屏幕上，帮助扩展后方视野，改善乘员或货物遮挡以及复杂天气下的观察效果。"
             Features = @(
                 @("数字化后方视野", "将摄像头画面显示在车内后视镜，减少车内遮挡影响。"),
                 @("复杂环境显示", "针对夜间、雨雾和强光场景优化画面可读性。"),
@@ -364,8 +364,8 @@ $products = @(
             Apps = @("乘用车后视", "商用车后视", "满载与遮挡场景")
         }
         tw = @{
-            Name = "VT-E-Mirror"; Short = "流媒體後視鏡"
-            Summary = "VT-E-Mirror 透過車尾攝影機採集後方畫面，並顯示在車內後視鏡螢幕上，協助擴展後方視野，改善乘員或貨物遮擋以及複雜天氣下的觀察效果。"
+            Name = "E-Mirror"; Short = "流媒體後視鏡"
+            Summary = "E-Mirror 透過車尾攝影機採集後方畫面，並顯示在車內後視鏡螢幕上，協助擴展後方視野，改善乘員或貨物遮擋以及複雜天氣下的觀察效果。"
             Features = @(
                 @("數位化後方視野", "將攝影機畫面顯示在車內後視鏡，減少車內遮擋影響。"),
                 @("複雜環境顯示", "針對夜間、雨霧和強光場景優化畫面可讀性。"),
@@ -374,8 +374,8 @@ $products = @(
             Apps = @("乘用車後視", "商用車後視", "滿載與遮擋場景")
         }
         en = @{
-            Name = "VT-E-Mirror"; Short = "Streaming Rearview Mirror"
-            Summary = "VT-E-Mirror displays a rear-camera feed on an in-cabin mirror screen, expanding rear visibility when passengers or cargo obstruct the view and in challenging weather."
+            Name = "E-Mirror"; Short = "Streaming Rearview Mirror"
+            Summary = "E-Mirror displays a rear-camera feed on an in-cabin mirror screen, expanding rear visibility when passengers or cargo obstruct the view and in challenging weather."
             Features = @(
                 @("Digital rear visibility", "Displays the rear camera feed on the interior mirror to reduce obstruction."),
                 @("Challenging-condition display", "Optimizes image readability at night, in rain, fog and strong light."),
@@ -387,8 +387,8 @@ $products = @(
     @{
         File = "vt-hud.html"; Category = "cockpit"; Image = "app-cockpit.webp"
         cn = @{
-            Name = "VT-HUD"; Short = "抬头显示"
-            Summary = "VT-HUD 将车速、导航和辅助驾驶提示等关键信息投射到驾驶员前方视野，减少视线转移，让重要信息更直观地呈现。"
+            Name = "HUD"; Short = "抬头显示"
+            Summary = "HUD 将车速、导航和辅助驾驶提示等关键信息投射到驾驶员前方视野，减少视线转移，让重要信息更直观地呈现。"
             Features = @(
                 @("关键信息前置", "在驾驶员前方显示车速、导航与辅助提示等重要信息。"),
                 @("减少视线转移", "让驾驶者更少低头查看信息，专注前方道路。"),
@@ -397,8 +397,8 @@ $products = @(
             Apps = @("智能座舱", "辅助驾驶信息显示", "车型平台定制")
         }
         tw = @{
-            Name = "VT-HUD"; Short = "抬頭顯示"
-            Summary = "VT-HUD 將車速、導航和輔助駕駛提示等關鍵資訊投射到駕駛員前方視野，減少視線轉移，讓重要資訊更直觀地呈現。"
+            Name = "HUD"; Short = "抬頭顯示"
+            Summary = "HUD 將車速、導航和輔助駕駛提示等關鍵資訊投射到駕駛員前方視野，減少視線轉移，讓重要資訊更直觀地呈現。"
             Features = @(
                 @("關鍵資訊前置", "在駕駛員前方顯示車速、導航與輔助提示等重要資訊。"),
                 @("減少視線轉移", "讓駕駛者更少低頭查看資訊，專注前方道路。"),
@@ -407,8 +407,8 @@ $products = @(
             Apps = @("智能座艙", "輔助駕駛資訊顯示", "車型平台定製")
         }
         en = @{
-            Name = "VT-HUD"; Short = "Head-Up Display"
-            Summary = "VT-HUD projects key information such as speed, navigation and driving-assistance prompts into the driver's forward view, reducing the need to look away from the road."
+            Name = "HUD"; Short = "Head-Up Display"
+            Summary = "HUD projects key information such as speed, navigation and driving-assistance prompts into the driver's forward view, reducing the need to look away from the road."
             Features = @(
                 @("Key information ahead", "Displays speed, navigation and assistance prompts in the driver's forward field of view."),
                 @("Less gaze diversion", "Reduces the need to look down for important driving information."),
