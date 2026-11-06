@@ -176,6 +176,8 @@ ul{list-style:none}
   .tech-intro{font-size:13.5px;line-height:1.9;text-align:left}
   .about-metrics{grid-template-columns:1fr}
   .hero-inner{padding-left:16px;padding-right:16px}
+  .hero .en-tag{font-size:13px;line-height:1.8;letter-spacing:2px;padding:0 10px}
+  .hero h1:not(.en-long){font-size:28px;letter-spacing:1px;white-space:nowrap}
   .honor-grid{grid-template-columns:1fr}
   .hero h1{font-size:28px}
   .hero h1.en-long{font-size:22px;letter-spacing:1px}
