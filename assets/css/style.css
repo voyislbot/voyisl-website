@@ -1975,3 +1975,9 @@ html[lang="en"] .hero .hero-desc{
     text-align:left;
   }
 }
+
+html[lang="en"] .metric-card strong.metric-stack{
+  font-size:19px;
+  line-height:1.25;
+  white-space:nowrap;
+}
