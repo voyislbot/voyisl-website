@@ -25,13 +25,13 @@ for nid in IDS:
     except Exception as e:
         print("fetch", nid, "ERR", repr(e)[:100])
 EN_T = {
- "148": "Gathering Strength in Brazil | VOYISL Partners with MEKRA Lang and Metagal at Mercedes-Benz Tech Day",
+ "148": "Voyager Intelligent Systems Limited Partners with MEKRA Lang do Brasil and Metagal Industria e Comércio at Mercedes-Benz Tech Day",
  "146": "GB 47955 Takes Effect | Meeting L2 Safety with the Eye-Brain-Body Framework",
  "133": "Dreams Awaken in Summer | Pearl Youths at VOYISL",
  "131": "VOYISL at WAIC | Mass-Production Physical AI Solutions",
  "127": "Meet AI, Meet VOYISL | Join Us at WAIC 2026",
  "126": "Yicai Interview | Dialogue with Brian Chen, CEO of VOYISL",
- "125": "Dragon Boat Festival | Academia & Enterprise Sail Together",
+ "125": "Dragon Boat Festival: Industry and Academia Row Side by Side | Voyager Intelligent Systems Limited Sponsors Fudan University School of Management Alumni VC/PE Club",
  "124": "VOYISL Named 2026 GoGlobal Emerging Mobility Brands TOP10",
 }
 def header_tpl(lang):

@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import os, io, re
 
 BASE = r"C:\Users\VT86\Documents\Codex\2026-08-18\c\outputs\voyager-clone"
@@ -225,7 +225,7 @@ def content_tech(lang, pre):
 
 def content_news(lang, pre):
     if lang == "cn":
-        items = [("07","2026","聚力巴西，深化南美布局 | 寅家科技携手梅克朗、Metagal 亮相梅赛德斯-奔驰技术日","深化海外布局，携手产业链伙伴共同拓展南美及欧洲市场。"),
+        items = [("07","2026","寅家科技亮相梅赛德斯-奔驰技术日","展示商用车智能辅助驾驶解决方案，深化南美市场布局。"),
                  ("06","2026","GB 47955新规来袭，寅家靠“眼·脑·身”拿下L2安全考题","以“眼·脑·身”技术框架响应新规要求，保障 L2 安全。"),
                  ("05","2026","寅家WAIC时刻 | 亮出“眼·脑·身”物理AI量产解决方案","亮相世界人工智能大会 WAIC，展示量产级物理 AI 解决方案。"),
                  ("05","2026","Meet AI, Meet VOYISL | 公司邀您参加 WAIC 2026","与全球伙伴共赴 AI 盛会，见证智能出行新未来。"),
@@ -233,7 +233,7 @@ def content_news(lang, pre):
                  ("03","2026","寅家科技荣获【2026中国出行科技全球化新锐品牌TOP10】","凭借量产能力与海外交付表现荣登年度新锐品牌榜单。")]
         h2 = "企业动态"
     elif lang == "tw":
-        items = [("07","2026","聚力巴西，深化南美佈局 | 寅家科技攜手梅克朗、Metagal 亮相梅賽德斯-賓士技術日","深化海外佈局，攜手產業鏈夥伴共同拓展南美及歐洲市場。"),
+        items = [("07","2026","寅家科技亮相梅賽德斯-奔馳技術日","展示商用車智能輔助駕駛解決方案，深化南美市場佈局。"),
                  ("06","2026","GB 47955新規來襲，寅家靠「眼·腦·身」拿下L2安全考題","以「眼·腦·身」技術框架響應新規要求，保障 L2 安全。"),
                  ("05","2026","寅家WAIC時刻 | 亮出「眼·腦·身」物理AI量產解決方案","亮相世界人工智慧大會 WAIC，展示量產級物理 AI 解決方案。"),
                  ("05","2026","Meet AI, Meet VOYISL | 公司邀您參加 WAIC 2026","與全球夥伴共赴 AI 盛會，見證智慧出行新未來。"),
@@ -241,7 +241,7 @@ def content_news(lang, pre):
                  ("03","2026","寅家科技榮獲【2026中國出行科技全球化新銳品牌TOP10】","憑藉量產能力與海外交付表現榮登年度新銳品牌榜單。")]
         h2 = "企業動態"
     else:
-        items = [("07","2026","Gathering Strength in Brazil: VOYISL Partners with MEKRA Lang and Metagal at Mercedes-Benz Tech Day","Deepening our overseas footprint together with industry partners across South America and Europe."),
+        items = [("07","2026","Voyager Intelligent Systems Limited Partners with MEKRA Lang do Brasil and Metagal Industria e Comércio at Mercedes-Benz Tech Day","Showcasing intelligent-driving solutions for commercial vehicles and deepening our South American market presence."),
                  ("06","2026","GB 47955 Takes Effect: Meeting L2 Safety Standards with the \"Eye-Brain-Body\" Framework","Responding to the new regulation with our full-stack framework to secure L2 safety."),
                  ("05","2026","VOYISL at WAIC: Unveiling Mass-Production Physical AI Solutions","Showcasing production-grade physical AI solutions at the World AI Conference."),
                  ("05","2026","Meet AI, Meet VOYISL: Join Us at WAIC 2026","Join global partners at the AI summit and experience the future of smart mobility."),
