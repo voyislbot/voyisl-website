@@ -1690,3 +1690,82 @@ h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
     mask-image:linear-gradient(to bottom,transparent 0,#000 9%,#000 91%,transparent 100%);
   }
 }
+
+/* ===== 2026-11-06 heading refinement and clean hero image ===== */
+/* Show the supplied hero artwork in its original 16:9 frame, without an overlay. */
+.hero{
+  min-height:0;
+  aspect-ratio:16/9;
+  margin-top:76px;
+  background:#dceafd;
+}
+.hero-bg .veil{display:none}
+.hero-bg img{
+  object-fit:contain;
+  object-position:center;
+}
+.hero h1,
+.hero h1.en-long,
+.hero h1.hero-theme{color:#202a33}
+.hero .hero-award,
+.hero .hero-award span{color:#52606d}
+.hero .hero-award b{color:var(--gold-dark)}
+.hero .hero-desc{color:#52606d}
+
+/* Smaller, lighter headings throughout the highlighted content areas. */
+.sec-head h2{
+  font-size:24px;
+  font-weight:500!important;
+  letter-spacing:.35px;
+}
+.about h3{
+  font-size:20px;
+  font-weight:500!important;
+  line-height:1.55;
+  letter-spacing:.2px;
+}
+.scale .num.scale-title{
+  font-size:17px;
+  font-weight:500!important;
+  line-height:1.55;
+  letter-spacing:.15px;
+}
+.platform-board-head h2{
+  font-size:22px;
+  font-weight:500!important;
+  letter-spacing:.4px;
+}
+.contact-info h3,
+.ir-contact-panel h2,
+.ir-contact-form h2{
+  font-size:20px;
+  font-weight:500!important;
+  line-height:1.45;
+  letter-spacing:.3px;
+}
+
+@media(max-width:760px){
+  .sec-head h2{font-size:22px}
+  .about h3{font-size:18px}
+  .scale .num.scale-title{font-size:16px}
+  .platform-board-head h2{font-size:20px}
+  .contact-info h3,
+  .ir-contact-panel h2,
+  .ir-contact-form h2{font-size:18px}
+  .hero{aspect-ratio:16/9;min-height:0;margin-top:68px}
+  .hero-bg img{object-fit:contain;object-position:center}
+  .hero-inner{padding-bottom:10px}
+  .hero h1,
+  .hero h1.en-long,
+  .hero h1.hero-theme{
+    font-size:17px;
+    line-height:1.3;
+  }
+  .hero .hero-award{margin-top:6px;font-size:9.5px}
+  .hero .hero-award span{display:inline;margin-top:0}
+  .hero .hero-desc{
+    margin-top:6px;
+    font-size:9.5px;
+    line-height:1.45;
+  }
+}
