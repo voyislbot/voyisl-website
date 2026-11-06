@@ -159,9 +159,9 @@ def body(lang, pre, d, slug):
        intro_html, stats, secs, d["apps_title"], cols)
 
 DESC = {
- "cn": "寅家科技（VOYISL）专注于智能驾驶与泊车技术，提供视觉感知 VT-Sensing、融合定位 VT-Navi、决策控制 VT-Vulcan 全栈量产解决方案。",
- "tw": "寅家科技（VOYISL）專注於智慧駕駛與泊車技術，提供視覺感知 VT-Sensing、融合定位 VT-Navi、決策控制 VT-Vulcan 全棧量產解決方案。",
- "en": "VOYISL specializes in intelligent driving and parking technology, delivering full-stack mass-production solutions across visual perception VT-Sensing, fusion positioning VT-Navi and decision control VT-Vulcan.",
+ "cn": "寅家科技（VOYISL）专注于智能驾驶与泊车技术，提供视觉感知 VT-Sensing、融合定位 VT-Navi、决策控制 VT-Vulcan® 全栈量产解决方案。",
+ "tw": "寅家科技（VOYISL）專注於智慧駕駛與泊車技術，提供視覺感知 VT-Sensing、融合定位 VT-Navi、決策控制 VT-Vulcan® 全棧量產解決方案。",
+ "en": "VOYISL specializes in intelligent driving and parking technology, delivering full-stack mass-production solutions across visual perception VT-Sensing, fusion positioning VT-Navi and decision control VT-Vulcan®.",
 }
 
 PAGES = {
