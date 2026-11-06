@@ -25,7 +25,7 @@ for nid in IDS:
     except Exception as e:
         print("fetch", nid, "ERR", repr(e)[:100])
 EN_T = {
- "148": "Voyager Intelligent Systems Limited Partners with MEKRA Lang do Brasil and Metagal Industria e Comércio at Mercedes-Benz Tech Day",
+ "148": "Voyager Intelligent Systems Limited Showcases Solutions at Mercedes-Benz Tech Day",
  "146": "GB 47955 Takes Effect | Meeting L2 Safety with the Eye-Brain-Body Framework",
  "133": "Dreams Awaken in Summer | Pearl Youths at VOYISL",
  "131": "VOYISL at WAIC | Mass-Production Physical AI Solutions",

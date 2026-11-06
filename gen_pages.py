@@ -241,7 +241,7 @@ def content_news(lang, pre):
                  ("03","2026","寅家科技榮獲【2026中國出行科技全球化新銳品牌TOP10】","憑藉量產能力與海外交付表現榮登年度新銳品牌榜單。")]
         h2 = "企業動態"
     else:
-        items = [("07","2026","Voyager Intelligent Systems Limited Partners with MEKRA Lang do Brasil and Metagal Industria e Comércio at Mercedes-Benz Tech Day","Showcasing intelligent-driving solutions for commercial vehicles and deepening our South American market presence."),
+        items = [("07","2026","Voyager Intelligent Systems Limited Showcases Solutions at Mercedes-Benz Tech Day","Showcasing intelligent-driving solutions for commercial vehicles and deepening our South American market presence."),
                  ("06","2026","GB 47955 Takes Effect: Meeting L2 Safety Standards with the \"Eye-Brain-Body\" Framework","Responding to the new regulation with our full-stack framework to secure L2 safety."),
                  ("05","2026","VOYISL at WAIC: Unveiling Mass-Production Physical AI Solutions","Showcasing production-grade physical AI solutions at the World AI Conference."),
                  ("05","2026","Meet AI, Meet VOYISL: Join Us at WAIC 2026","Join global partners at the AI summit and experience the future of smart mobility."),
