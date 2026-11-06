@@ -1876,3 +1876,102 @@ h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
   object-fit:contain;
   background:#f3f3f1;
 }
+
+/* ===== English editorial typography refinement ===== */
+html[lang="en"] .hero .hero-award{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:3px;
+}
+html[lang="en"] .hero .hero-award span{
+  display:block;
+  margin-top:2px;
+}
+html[lang="en"] .hero .hero-desc{
+  max-width:1200px;
+  font-size:11px;
+  line-height:1.58;
+  text-wrap:balance;
+}
+html[lang="en"] .about-grid .reveal>p{
+  font-size:13.5px;
+  line-height:1.9;
+}
+
+/* Long-form English copy uses consistent two-edge alignment. */
+html[lang="en"] .about-grid p,
+html[lang="en"] .news-detail p,
+html[lang="en"] .news-detail li,
+html[lang="en"] .tech-intro p,
+html[lang="en"] .esg-intro,
+html[lang="en"] .esg-topic-body p,
+html[lang="en"] .ir-warning-copy,
+html[lang="en"] .ir-overview-copy p,
+html[lang="en"] .ir-notes p,
+html[lang="en"] .ir-governance-card p,
+html[lang="en"] .ir-committee p,
+html[lang="en"] .ir-control-item,
+html[lang="en"] .solution-callout span,
+html[lang="en"] .hero .hero-desc{
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+
+@media(max-width:760px){
+  html[lang="en"] .hero .hero-desc{
+    max-width:100%;
+    font-size:9px;
+    line-height:1.45;
+  }
+  html[lang="en"] .about-grid .reveal>p{font-size:12.5px;line-height:1.8}
+}
+
+/* English mobile keeps the original image uncropped and places copy below it. */
+@media(max-width:760px){
+  html[lang="en"] .hero{
+    display:block;
+    aspect-ratio:auto;
+    min-height:0;
+    background:#fff;
+  }
+  html[lang="en"] .hero-bg{
+    position:relative;
+    inset:auto;
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+  }
+  html[lang="en"] .hero-bg img{
+    position:static;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+  html[lang="en"] .hero-inner{
+    width:calc(100% - 40px);
+    height:auto;
+    margin:0 auto;
+    padding:18px 0 28px;
+  }
+  html[lang="en"] .hero h1,
+  html[lang="en"] .hero h1.hero-theme{
+    font-size:18px;
+    line-height:1.35;
+  }
+  html[lang="en"] .hero .hero-award{
+    margin-top:8px;
+    font-size:10px;
+  }
+  html[lang="en"] .hero .hero-award span{
+    display:block;
+    margin-top:2px;
+  }
+  html[lang="en"] .hero .hero-desc{
+    margin-top:9px;
+    max-width:100%;
+    font-size:11px;
+    line-height:1.65;
+    text-align:left;
+  }
+}
