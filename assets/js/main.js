@@ -99,6 +99,27 @@
   });
 
 (function () {
+  var irForm = document.getElementById("irContactForm");
+  if (!irForm) return;
+  irForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var data = new FormData(irForm);
+    var subject = irForm.getAttribute("data-subject") || "Investor Relations Enquiry";
+    var enquirySubject = (data.get("subject") || "").trim();
+    if (enquirySubject) subject += " - " + enquirySubject;
+    var body = [
+      "Name: " + (data.get("name") || ""),
+      "Company: " + (data.get("company") || ""),
+      "Email: " + (data.get("email") || ""),
+      "Telephone: " + (data.get("phone") || ""),
+      "",
+      (data.get("message") || "")
+    ].join("\n");
+    window.location.href = "mailto:vtinfo@voyager-tech.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+})();
+
+(function () {
   var vids = document.querySelectorAll("video[data-autoplay-on-visible]");
   if (!vids.length) return;
   function loadVideo(v) {
