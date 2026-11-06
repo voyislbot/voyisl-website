@@ -1796,3 +1796,29 @@ h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
   .hero .hero-award{margin-top:5px;font-size:9px}
   .hero .hero-desc{margin-top:auto;font-size:9px;line-height:1.42}
 }
+
+/* Homepage hero copy returns to one compact block at the lower-left. */
+.hero{align-items:flex-end}
+.hero-inner{
+  display:block;
+  height:auto;
+  padding:0 0 56px;
+}
+.hero .hero-award{margin-top:10px}
+.hero .hero-desc{
+  max-width:1120px;
+  margin:13px 0 0;
+  font-size:12.5px;
+  line-height:1.68;
+  text-wrap:balance;
+}
+
+@media(max-width:760px){
+  .hero-inner{padding:0 0 10px}
+  .hero .hero-desc{
+    max-width:100%;
+    margin-top:6px;
+    font-size:9px;
+    line-height:1.42;
+  }
+}
