@@ -927,13 +927,6 @@ ul{list-style:none}
   .agents .wrap > p.reveal{font-size:13px;letter-spacing:0;max-width:100%;margin-bottom:30px}
 }
 
-/* ===== 手机端 Hero 背景替换 ===== */
-.hero-bg .hero-bg-mobile{display:none}
-@media (max-width:768px){
-  .hero-bg .hero-bg-desktop{display:none}
-  .hero-bg .hero-bg-mobile{display:block}
-}
-
 /* ===== 技术路线 tech-mid 手机端裁剪图 ===== */
 .tech-mid-mb{display:none}
 @media (max-width:768px){
