@@ -61,6 +61,10 @@ ul{list-style:none}
 .hero .en-tag{color:var(--gold-light);letter-spacing:8px;font-size:13px;text-transform:uppercase}
 .hero h1{font-size:56px;letter-spacing:14px;margin:26px 0 18px;font-weight:800}
 .hero h1.en-long{font-size:44px;letter-spacing:3px;line-height:1.4}
+.hero h1.hero-theme{max-width:1120px;margin:22px auto 0;font-size:clamp(28px,3.1vw,42px);line-height:1.45;letter-spacing:2px}
+.hero .hero-award{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 12px;margin-top:18px;font-size:17px;letter-spacing:1px;color:#eee8de}
+.hero .hero-award b{color:var(--gold-light);font-weight:700}
+.hero .hero-award span{font-size:13px;letter-spacing:.5px;color:#d8d2c8}
 .hero .sub{font-size:18px;letter-spacing:5px;color:#d8d2c8;font-weight:300}
 .hero .sub.sub-long{max-width:940px;margin:0 auto;font-size:15px;line-height:1.9;letter-spacing:.8px}
 .hero .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:#cfc8bc;font-size:12px;letter-spacing:3px;animation:bob 2s infinite}
@@ -177,7 +181,9 @@ ul{list-style:none}
   .about-metrics{grid-template-columns:1fr}
   .hero-inner{padding-left:16px;padding-right:16px}
   .hero .en-tag{font-size:13px;line-height:1.8;letter-spacing:2px;padding:0 10px}
-  .hero h1:not(.en-long){font-size:28px;letter-spacing:1px;white-space:nowrap}
+  .hero h1.hero-theme{font-size:23px;letter-spacing:1px;line-height:1.55}
+  .hero .hero-award{display:grid;gap:4px;margin-top:16px;font-size:16px}
+  .hero .hero-award span{font-size:12px;line-height:1.65}
   .honor-grid{grid-template-columns:1fr}
   .hero h1{font-size:28px}
   .hero h1.en-long{font-size:22px;letter-spacing:1px}
