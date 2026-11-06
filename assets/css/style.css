@@ -1496,3 +1496,155 @@ svg{stroke:var(--gold-dark)}
   .page-hero h1{font-size:34px;letter-spacing:.5px}
   .page-hero .en{letter-spacing:1.8px}
 }
+
+/* ===== 2026 visual refinement ===== */
+/* Keep hierarchy precise: avoid oversized and heavily weighted display text. */
+h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
+.sec-head h2{font-size:28px;letter-spacing:.5px}
+.about h3{font-size:24px;letter-spacing:.5px}
+.honor b{font-size:15.5px}
+.metric-card strong{font-size:22px}
+.scale .num,.team .num,.asub-stat .num{font-size:28px}
+.agents-img .img-label{font-size:26px;letter-spacing:4px}
+.env-title span{font-size:34px;letter-spacing:6px}
+.platform-principles{font-size:12.5px;font-weight:600;letter-spacing:3px}
+
+/* Homepage hero: editorial copy at the lower-left, directly over the image. */
+.hero{
+  min-height:84vh;
+  align-items:flex-end;
+  justify-content:flex-start;
+}
+.hero-bg .veil{
+  background:
+    linear-gradient(90deg,rgba(18,23,27,.48) 0%,rgba(18,23,27,.2) 56%,rgba(18,23,27,.04) 100%),
+    linear-gradient(0deg,rgba(18,23,27,.54) 0%,rgba(18,23,27,0) 64%);
+}
+.hero-inner{
+  width:min(1200px,calc(100% - 48px));
+  margin:0 auto;
+  padding:0 0 68px;
+  color:#fff;
+  text-align:left;
+  background:none;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+.hero h1,
+.hero h1.en-long,
+.hero h1.hero-theme{
+  max-width:920px;
+  margin:0;
+  color:#fff;
+  font-size:clamp(26px,2.7vw,36px);
+  font-weight:500!important;
+  line-height:1.32;
+  letter-spacing:.2px;
+}
+.hero .hero-award{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  width:auto;
+  margin-top:16px;
+  padding:0;
+  color:rgba(255,255,255,.76);
+  background:none;
+  border:0;
+  border-radius:0;
+  font-size:13px;
+  font-weight:500;
+}
+.hero .hero-award b{color:var(--gold)}
+.hero .hero-award span{color:rgba(255,255,255,.72)}
+.hero .hero-desc{
+  max-width:760px;
+  margin:18px 0 0;
+  color:rgba(255,255,255,.8);
+  font-size:14px;
+  font-weight:400;
+  line-height:1.85;
+}
+
+/* Secondary-page banners: smaller, calmer headings with more usable whitespace. */
+.page-hero{padding:132px 24px 68px}
+.page-hero .en{
+  padding:5px 10px;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:2px;
+}
+.page-hero h1{
+  margin-top:16px;
+  font-size:clamp(30px,2.7vw,36px);
+  font-weight:500!important;
+  line-height:1.28;
+  letter-spacing:.4px;
+}
+.page-hero .bar{width:42px;margin-top:17px}
+.page-hero .hero-desc,
+.page-hero .inner p:not(.en),
+.page-hero .intro{font-size:14px;line-height:1.85}
+
+/* Button color logic: muted surface = brand text; brand surface = white text. */
+.btn,
+.btn-line,
+.news-pager a,
+.ir-download,
+.ir-doc-card .ir-download,
+.ir-doc-row .ir-download,
+.news-back{
+  color:var(--gold-dark);
+  background:rgba(244,244,241,.88);
+  border-color:rgba(36,36,36,.1);
+}
+.btn:hover,
+.btn-line:hover,
+.news-pager a:hover,
+.news-pager a.active,
+.ir-download:hover,
+.ir-doc-card .ir-download:hover,
+.ir-doc-row .ir-download:hover,
+.news-back:hover{
+  color:#fff;
+  background:var(--gold);
+  border-color:var(--gold);
+}
+.lang-switch a.on,
+.tl-stage>h4,
+.fold-icon,
+.honor-item .yr,
+.honor-item .yr span,
+.hc-btn:hover{color:#fff}
+.fold-icon,.tl-stage>h4,.honor-item .yr{color:#fff}
+
+/* Footer follows the reference site's pale-gray full-width surface. */
+.site-footer{
+  background:#f4f4f1;
+  border-top:1px solid #e7e7e2;
+}
+.footer-bottom{border-top-color:#dfdfda}
+
+@media(max-width:760px){
+  .sec-head h2{font-size:25px}
+  .hero{min-height:78vh}
+  .hero-inner{
+    width:calc(100% - 40px);
+    padding:0 0 46px;
+    border-radius:0;
+  }
+  .hero h1,
+  .hero h1.en-long,
+  .hero h1.hero-theme{
+    font-size:clamp(24px,6.8vw,31px);
+    line-height:1.34;
+  }
+  .hero .hero-award{display:block;font-size:12.5px}
+  .hero .hero-award span{display:block;margin-top:2px}
+  .hero .hero-desc{font-size:13px;line-height:1.8}
+  .page-hero{padding:116px 20px 58px}
+  .page-hero h1{font-size:29px;font-weight:500!important}
+}
