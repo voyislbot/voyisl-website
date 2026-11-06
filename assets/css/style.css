@@ -1870,3 +1870,9 @@ h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
   .module-card h3{font-size:17px}
   .module-card .en{font-size:11.5px}
 }
+
+/* Preserve the complete KPMG award image inside the carousel frame. */
+.hc-slide img.hc-slide-contain{
+  object-fit:contain;
+  background:#f3f3f1;
+}
