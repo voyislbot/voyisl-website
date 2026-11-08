@@ -415,6 +415,9 @@ ul{list-style:none}
 .solution-hub-card ul,.solution-detail-card ul{display:grid;gap:8px;margin-top:16px}
 .solution-hub-card li,.solution-detail-card li{position:relative;padding-left:16px;color:#555;font-size:13.5px;line-height:1.7}
 .solution-hub-card li::before,.solution-detail-card li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hub-product-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.hub-product-tags .hub-tag{display:inline-flex;align-items:center;min-height:29px;padding:5px 11px;border:1px solid rgba(234,179,23,.22);border-radius:999px;background:#fbf7eb;color:var(--gold-dark);font-size:12px;font-weight:700;letter-spacing:.45px;line-height:1.2}
+.hub-product-tags .hub-tag-status{border-color:var(--line);background:#f7f7f4;color:#6d6961;font-weight:600;letter-spacing:.2px}
 .solution-hub-card .card-link{margin-top:auto;padding-top:24px;color:var(--gold-dark);font-size:13.5px;font-weight:600;letter-spacing:1px}
 .solution-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .solution-detail-card{padding:28px 26px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);transition:.3s}
@@ -431,6 +434,10 @@ ul{list-style:none}
 .product-line-card .line-code{display:block;color:var(--gold-light);font-size:12px;font-weight:700;letter-spacing:3px;margin-bottom:8px;text-transform:uppercase}
 .product-line-card h3{font-size:24px;letter-spacing:1px;margin-bottom:9px;color:#fff}
 .product-line-card p{color:rgba(255,255,255,.82);font-size:14px;line-height:1.85}
+.line-product-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px}
+.line-product-label{margin-right:2px;color:rgba(255,255,255,.58);font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+.line-product-links a{display:inline-flex;align-items:center;min-height:29px;padding:5px 11px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.08);color:#fff;font-size:12px;font-weight:700;letter-spacing:.45px;line-height:1.2;transition:.25s}
+.line-product-links a:hover,.line-product-links a:focus-visible{border-color:var(--gold-light);background:rgba(234,179,23,.18);color:var(--gold-light);outline:none}
 .roadmap-block{margin-top:74px}
 .roadmap-intro{max-width:900px;margin:-32px auto 28px;color:var(--muted);font-size:14px;line-height:1.9;text-align:center}
 .roadmap-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
