@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>寅家科技 VOYISL - 軟硬件一體化模組</title>
 <meta name="description" content="VT-Sensing、VT-Navi 與 VT-Vulcan® 三大軟硬件一體化模組覆蓋視覺感知、多傳感器融合定位與導航、規劃與控制。">
-<link rel="stylesheet" href="../assets/css/style.css?v=84">
+<link rel="stylesheet" href="../assets/css/style.css?v=85">
 </head>
 <body>
 <header class="site-header">
@@ -27,12 +27,63 @@
   </div>
 </section>
 <section class="sec"><div class="wrap">
-  <div class="solution-detail-grid">
-    <article class="solution-detail-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3.2"/></svg></div><span class="eyebrow">視覺感知</span><h2>VT-Sensing</h2><p>採用已進入量產的視覺感知技術，覆蓋環視、前視、側視、後視及艙內監控，並可在攝像頭模組內完成成像處理與部分感知計算。</p><ul><li>Vs-S 系列面向廣角環視、泊車及車輛周邊感知。</li><li>Vs-I 系列面向前視、側視和後視的遠距離或細節感知。</li><li>Vs-G 系列面向 IMS、DMS、OMS 等近距艙內監控與人機交互。</li><li>視算一體架構在模組端處理視覺數據，減少原始視頻傳輸和域控制器計算負荷。</li></ul></article>
-    <article class="solution-detail-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div><span class="eyebrow">多傳感器融合定位與導航</span><h2>VT-Navi</h2><p>在模組內部集成加速度計、陀螺儀、地磁、氣壓和運動協處理器，輸出姿態、運動及相對高度資訊，並可進一步融合車端多源傳感數據。</p><ul><li>透過地磁輔助慣性導航校正航向漂移並降低磁干擾。</li><li>可融合攝像頭、毫米波雷達、超聲波與 GNSS 輸入。</li><li>關聯不同傳感器對同一目標的檢測結果，提升複雜環境下的定位與追蹤連續性。</li><li>面向車輛、低空平台、農業機器人及通用機器人提供定位導航基礎。</li></ul></article>
-    <article class="solution-detail-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><path d="M10 12h4M12 10v4"/></svg></div><span class="eyebrow">規劃與控制</span><h2>VT-Vulcan®</h2><p>以域控制器承載計算、規劃、決策與控制，接收攝像頭、雷達及超聲波等傳感輸入，並向車輛執行器下達控制指令。</p><ul><li>支持多傳感器數據融合、障礙物檢測、軌跡規劃與防撞控制。</li><li>採用虛擬化架構，使多個操作系統及軟件組件在隔離環境中運行和獨立更新。</li><li>提供多種量產型號，覆蓋乘用車、商用車的高速、城市及泊車場景。</li><li>可透過跨域控制器在同一平台組合智能駕駛與智能座艙功能。</li></ul></article>
+  <div class="application-detail-stack">
+    <article class="solution-detail-card application-detail-card reveal">
+      <header class="application-detail-head">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+        <span class="eyebrow">視覺感知</span><h2>VT-Sensing</h2>
+        <p class="application-kicker">面向環視、前視、側後視及艙內監控的軟硬件一體化攝像頭模組</p>
+      </header>
+      <div class="application-detail-body">
+        <div class="application-scenes"><span class="application-scene-chip">Vs-S 環視</span><span class="application-scene-chip">Vs-I 前視與側後視</span><span class="application-scene-chip">Vs-G 艙內監控</span><span class="application-scene-chip">視算一體</span></div>
+        <p class="application-intro">VT-Sensing 將光學設計、圖像傳感器選擇、模組封裝、ISP 調優及車規級環境適配整合於攝像頭模組，並可在模組內完成成像處理和部分感知計算。</p>
+        <div class="application-feature-grid">
+          <section class="application-feature"><h4>Vs-S 系列</h4><p>面向廣角視野、環視系統、泊車及車輛周邊感知，提供兼顧性能與成本的模組選擇。</p></section>
+          <section class="application-feature"><h4>Vs-I 系列</h4><p>透過多種視野與成像配置支持前視、側視及後視的遠距離或細節感知。</p></section>
+          <section class="application-feature"><h4>Vs-G 系列</h4><p>面向 IMS、DMS 與 OMS 等近距艙內監控及人機交互應用。</p></section>
+        </div>
+        <div class="application-feature-grid">
+          <section class="application-feature"><h4>車規環境可靠性</h4><p>面向寬溫度、粉塵、水汽及振動環境設計，改善背光、低照度、眩光及明暗快速切換下的成像穩定性。</p></section>
+          <section class="application-feature"><h4>高精度製造</h4><p>COB 封裝與六軸主動對準提升鏡頭與傳感器定位一致性、視場邊緣清晰度和多攝系統一致性。</p></section>
+          <section class="application-feature"><h4>視算一體架構</h4><p>在模組內執行本地感知與結果輸出，減少原始視頻傳輸、重複處理及域控制器計算負荷。</p></section>
+        </div>
+      </div>
+    </article>
+    <article class="solution-detail-card application-detail-card reveal">
+      <header class="application-detail-head">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+        <span class="eyebrow">多傳感器融合定位與導航</span><h2>VT-Navi</h2>
+        <p class="application-kicker">在複雜光照、遮擋、惡劣天氣與衛星信號受限條件下提升定位連續性</p>
+      </header>
+      <div class="application-detail-body">
+        <div class="application-scenes"><span class="application-scene-chip">慣性融合</span><span class="application-scene-chip">地磁輔助</span><span class="application-scene-chip">姿態與運動輸出</span><span class="application-scene-chip">多源目標關聯</span></div>
+        <p class="application-intro">VT-Navi 在模組內集成加速度計、陀螺儀、地磁、氣壓與運動協處理器，自動校準並實時融合測量數據，校正航向漂移並降低磁干擾。</p>
+        <div class="application-feature-grid">
+          <section class="application-feature"><h4>一體化傳感</h4><p>在模組內完成慣性、地磁和氣壓資訊採集，並由運動協處理器運行融合算法。</p></section>
+          <section class="application-feature"><h4>姿態與運動輸出</h4><p>提供航向、橫滾、俯仰、角速度、線加速度及相對高度等資訊。</p></section>
+          <section class="application-feature"><h4>多源融合</h4><p>可接入攝像頭、毫米波雷達、超聲波與 GNSS，並關聯同一目標的跨傳感器檢測。</p></section>
+        </div>
+        <div class="application-benefits"><div class="application-benefit"><span>01</span><h4>複雜環境連續定位</h4><p>在多源資訊融合下提升感知、定位與目標追蹤的連續性，為規劃動作提供持續輸入。</p></div><div class="application-benefit"><span>02</span><h4>跨平台導航基礎</h4><p>面向車輛、低空平台、農業機器人及通用機器人提供定位導航能力。</p></div></div>
+      </div>
+    </article>
+    <article class="solution-detail-card application-detail-card reveal">
+      <header class="application-detail-head">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><path d="M10 12h4M12 10v4"/></svg></div>
+        <span class="eyebrow">規劃與控制</span><h2>VT-Vulcan®</h2>
+        <p class="application-kicker">以多種量產域控制器承載計算、規劃、決策與控制</p>
+      </header>
+      <div class="application-detail-body">
+        <div class="application-scenes"><span class="application-scene-chip">乘用車</span><span class="application-scene-chip">商用車</span><span class="application-scene-chip">高速與城市道路</span><span class="application-scene-chip">泊車</span><span class="application-scene-chip">駕駛座艙跨域</span></div>
+        <p class="application-intro">VT-Vulcan® 域控制器接收攝像頭、雷達與超聲波輸入，執行感知、規劃及決策，並向車輛執行器下達控制指令；跨域型號可在同一平台支持智能駕駛與智能座艙。</p>
+        <div class="application-feature-grid">
+          <section class="application-feature"><h4>中央計算平台</h4><p>電子控制單元集成一個或多個 SoC，承載計算、規劃、決策與控制功能。</p></section>
+          <section class="application-feature"><h4>虛擬化架構</h4><p>多個操作系統與軟件組件在隔離環境中運行並可獨立更新，提升穩定性、安全性與更新靈活性。</p></section>
+          <section class="application-feature"><h4>多型號與跨域</h4><p>覆蓋乘用車、商用車的高速、城市和泊車場景，並提供駕駛與座艙跨域組合方案。</p></section>
+        </div>
+        <div class="application-benefits"><div class="application-benefit"><span>01</span><h4>感知到執行閉環</h4><p>打通傳感器輸入、軌跡規劃、防撞控制與車輛執行器指令。</p></div><div class="application-benefit"><span>02</span><h4>多平台部署</h4><p>結合 VT-Fundra 與 VT-Bridgara 支持主流 SoC、操作系統及車型適配。</p></div></div>
+      </div>
+    </article>
   </div>
-  <div class="solution-related reveal"><h3>相關模組詳情</h3><div class="related-link-grid"><a href="vt-sensing.html">VT-Sensing 視覺感知</a><a href="vt-navi.html">VT-Navi 多傳感器融合定位與導航</a><a href="vt-vulcan.html">VT-Vulcan® 規劃與控制</a></div></div>
   <div class="sec-head reveal" style="margin-top:64px"><p class="en">MODULAR COMPOSITION</p><h2>模組化組合與跨場景複用</h2><span class="bar"></span></div>
   <div class="solution-delivery-grid">
     <article class="solution-delivery-card reveal"><span>01</span><h3>按項目組合系統方案</h3><p>視覺感知、定位導航與規劃控制模組可按功能範圍、傳感器配置、算力及安全要求進行組合，形成智能駕駛、智能座艙及跨域系統級解決方案，減少重複組件適配。</p></article>
