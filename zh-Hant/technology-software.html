@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>寅家科技 VOYISL - 通用軟件架構</title>
 <meta name="description" content="VT-Navigara 的兩大通用軟件架構協調不同操作系統、SoC 平臺及硬件之間的差異，支持自研軟件算法跨平臺遷移與複用。">
-<link rel="stylesheet" href="../assets/css/style.css?v=78">
+<link rel="stylesheet" href="../assets/css/style.css?v=84">
 </head>
 <body>
 <header class="site-header">
@@ -26,7 +26,26 @@
     <p class="hero-desc hero-desc-justify">VT-Navigara 的兩大通用軟件架構包括 VT-Fundra 基礎適配架構與 VT-Bridgara 功能賦能架構，用於協調不同操作系統、SoC 平臺及其他硬件之間的差異，使自研軟件算法能夠以較少的重新開發遷移至不同 SoC 平台、車型及應用場景。</p>
   </div>
 </section>
-<section class="sec"><div class="wrap"><div class="platform-board reveal"><div class="platform-board-head"><span class="en">VT-Navigara</span><h2>通用軟件架構</h2><p>VT-Navigara 的兩大通用軟件架構包括 VT-Fundra 基礎適配架構與 VT-Bridgara 功能賦能架構，用於協調不同操作系統、SoC 平臺及其他硬件之間的差異，使自研軟件算法能夠以較少的重新開發遷移至不同 SoC 平台、車型及應用場景。</p></div><div class="architecture-list"><div class="architecture-row"><div class="architecture-code">VT-Bridgara</div><div class="architecture-copy"><b>功能賦能架構</b><p>自主開發的中間件、標準化接口、可複用算法及支持多種功能的多元化軟件組合。該架構將專有算法組合為支持 NOA、APA、RPA、HPA、AVP、TJP 及 HWP 等功能的模塊，並可進一步部署至不同操作系統、車型及應用場景。</p></div></div><div class="architecture-row"><div class="architecture-code">VT-Fundra</div><div class="architecture-copy"><b>基礎適配架構</b><p>自主開發的硬件抽象層、設備驅動程序及底層資源管理軟件。該架構將軟件與硬件解耦，使算法研發可獨立於不同硬件環境進行，並促進軟件算法遷移至不同 SoC 平臺。</p></div></div></div><div class="platform-principles">可複製 · 可迭代 · 可擴展</div></div><div class="solution-callout reveal"><div><b>技術平台</b><span>VT-Navigara 是以算法為基礎、軟硬件一體化的基礎設施，由 VT-Fundra 基礎適配架構與 VT-Bridgara 功能賦能架構兩大通用軟件架構，以及 VT-Sensing 視覺感知、VT-Navi 多傳感器融合定位與導航、VT-Vulcan® 規劃與控制三大軟硬件一體化模組構成。</span></div><a href="technology-platform.html">返回技術平台 →</a></div></div></section>
+<section class="sec"><div class="wrap">
+  <div class="platform-board reveal">
+    <div class="platform-board-head"><span class="en">VT-Navigara</span><h2>通用軟件架構</h2><p>VT-Fundra 基礎適配架構與 VT-Bridgara 功能賦能架構共同連接底層硬件、操作系統與上層功能算法，使自研算法能夠以有限修改遷移至不同 SoC 平台、操作系統和車型，並支持智能駕駛、智能座艙及汽車以外場景的軟件複用。</p></div>
+    <div class="architecture-list">
+      <div class="architecture-row"><div class="architecture-code">VT-Bridgara</div><div class="architecture-copy"><b>功能賦能架構</b><p>由中間件、標準化接口和可重用軟件及算法模組庫組成。中間件提供數據訪問、模組間通信與服務調用機制；標準化接口定義模組的數據輸入輸出及交互方式，使為一個車型開發的算法能夠經過有限適配後複用於其他車型。</p><p>可重用算法庫覆蓋校準、視覺感知、融合定位與建圖、規劃、決策及控制，可組合成支持 NOA、APA、RPA、HPA、AVP、TJP 及 HWP 等功能的軟件模組，並可整合 AUTOSAR 等行業標準組件。</p></div></div>
+      <div class="architecture-row"><div class="architecture-code">VT-Fundra</div><div class="architecture-copy"><b>基礎適配架構</b><p>由硬件抽象層（HAL）、設備驅動程序和底層資源管理軟件組成，將上層軟件算法與具體硬件及運行環境解耦。HAL 負責轉發攝像頭、IMU、車輛網絡及計算資源等請求，底層資源管理軟件按實時需求分配算力、內存和通信帶寬。</p><p>架構還可整合虛擬機管理程序、引導程序及板級支援套件，為操作系統運行、系統隔離及跨 SoC 平台部署提供基礎。</p></div></div>
+    </div>
+    <div class="sec-head reveal" style="margin-top:64px"><p class="en">REUSABLE ALGORITHM LIBRARY</p><h2>可重用算法庫</h2><span class="bar"></span></div>
+    <div class="mvv-grid">
+      <div class="mvv reveal"><span class="tag">路徑規劃</span><h4>最優路徑規劃算法</h4><p>綜合車輛位置、航向、轉向約束和周邊障礙物，評估前進、倒車及轉向方案，生成可執行、避免碰撞的泊車路徑。</p></div>
+      <div class="mvv reveal"><span class="tag">融合定位</span><h4>多傳感器融合算法</h4><p>融合 IMU、地磁、氣壓、攝像頭、毫米波雷達、超聲波與 GNSS 資訊，並關聯不同傳感器對同一目標的檢測結果，提升複雜環境下的連續性。</p></div>
+      <div class="mvv reveal"><span class="tag">自適應控制</span><h4>AI 賦能的自適應算法</h4><p>根據速度、跟車距離及加減速模式評估駕駛表現，在安全邊界內實時調整車輛控制參數，適配不同駕駛場景與駕駛習慣。</p></div>
+      <div class="mvv reveal"><span class="tag">BEV</span><h4>鳥瞰圖感知、定位與校準</h4><p>以統一俯視三維空間表達融合多傳感器輸入，支持遮擋目標推斷、跨視角一致檢測、BEV SLAM 定位建圖及行駛中的動態校準。</p></div>
+      <div class="mvv reveal"><span class="tag">智能交互</span><h4>艙內與視覺交互算法</h4><p>面向 IMS 識別疲勞、分心等狀態並聯動艙內功能；面向 CMS 優化低光圖像、識別盲區、增強惡劣天氣畫面並自適應調節亮度。</p></div>
+    </div>
+    <div class="asub-sec reveal"><h4>跨產品與跨場景複用</h4><p>功能軟件算法兼容多種主流 SoC 平台與操作系統，可應用於智能駕駛、智能座艙、低空經濟解決方案，以及研發中的農業機器人和其他通用機器人方案。算法可根據客戶的傳感器配置、芯片算力、功能範圍及安全要求進行組合和適配。</p></div>
+    <div class="platform-principles">可複製 · 可迭代 · 可擴展</div>
+  </div>
+  <div class="solution-callout reveal"><div><b>技術平台</b><span>VT-Navigara 以算法為基礎、軟硬件一體化，透過兩大通用軟件架構和三大軟硬件模組，將感知、定位、規劃控制與跨域應用連接為可複用的技術體系。</span></div><a href="technology-platform.html">返回技術平台 →</a></div>
+</div></section>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
