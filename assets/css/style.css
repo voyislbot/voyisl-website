@@ -2134,6 +2134,31 @@ html[lang="en"] .metric-card strong.metric-stack{
   .page-hero.technology-hero .inner{width:100%}
 }
 
+/* About page hero */
+.page-hero.about-hero{
+  aspect-ratio:4 / 1;
+  min-height:0;
+  display:flex;
+  align-items:center;
+  padding:76px 24px 0;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.86) 0%,rgba(255,255,255,.48) 46%,rgba(255,255,255,.04) 78%),
+    url("../img/about-banner-20261109.png") center center / contain no-repeat;
+  background-color:#edf7ff;
+}
+.page-hero.about-hero .bg{display:none}
+.page-hero.about-hero .inner{width:min(680px,100%);margin:0}
+@media(max-width:760px){
+  .page-hero.about-hero{
+    aspect-ratio:auto;
+    min-height:310px;
+    padding:96px 20px 44px;
+    background-size:100% auto;
+    background-position:center center;
+  }
+  .page-hero.about-hero .inner{width:100%}
+}
+
 @media(min-width:1025px) and (max-width:1180px){
   html[lang="en"] .nav{
     position:fixed;
