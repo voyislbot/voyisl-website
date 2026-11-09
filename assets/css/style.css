@@ -2064,17 +2064,34 @@ html[lang="en"] .metric-card strong.metric-stack{
 
 /* Solutions section hero and English-only VOYISL logo */
 .page-hero.solutions-hero{
-  min-height:400px;
+  aspect-ratio:4 / 1;
+  min-height:0;
   display:flex;
   align-items:center;
-  padding:112px 24px 58px;
+  padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 46%,rgba(255,255,255,.2) 74%,rgba(255,255,255,.04) 100%),
-    url("../img/solutions-banner-20261109-v2.png") center center / contain no-repeat;
+    url("../img/solutions-banner-20261109-v3.png") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.solutions-hero .bg{display:none}
 .page-hero.solutions-hero .inner{width:min(520px,100%);margin:0}
+.page-hero.solutions-hero .en{
+  padding:4px 9px;
+  font-size:10px;
+  letter-spacing:2px;
+}
+.page-hero.solutions-hero h1{
+  margin-top:8px;
+  font-size:clamp(28px,2.5vw,34px);
+}
+.page-hero.solutions-hero .bar{margin-top:10px}
+.page-hero.solutions-hero .hero-desc{
+  max-width:520px;
+  margin-top:10px;
+  font-size:13px;
+  line-height:1.55;
+}
 .logo-img.logo-img-en{
   height:30px;
   max-width:240px;
@@ -2082,6 +2099,7 @@ html[lang="en"] .metric-card strong.metric-stack{
 }
 @media(max-width:760px){
   .page-hero.solutions-hero{
+    aspect-ratio:auto;
     min-height:310px;
     padding:96px 20px 44px;
     background-position:center center;
