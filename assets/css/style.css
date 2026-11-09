@@ -2251,6 +2251,35 @@ html[lang="en"] .scale-dark .scale .lab{
   line-height:1.7;
   letter-spacing:.2px;
 }
+html[lang="cn"] .scale-dark .scale .scale-title,
+html[lang="tw"] .scale-dark .scale .scale-title,
+html[lang="zh-CN"] .scale-dark .scale .scale-title,
+html[lang="zh-Hant"] .scale-dark .scale .scale-title,
+html[lang="cn"] .scale-dark .scale .lab,
+html[lang="tw"] .scale-dark .scale .lab,
+html[lang="zh-CN"] .scale-dark .scale .lab,
+html[lang="zh-Hant"] .scale-dark .scale .lab{
+  width:100%;
+  text-align:justify;
+  text-align-last:left;
+  text-justify:inter-ideograph;
+}
+html[lang="cn"] .scale-dark .scale .scale-title,
+html[lang="tw"] .scale-dark .scale .scale-title,
+html[lang="zh-CN"] .scale-dark .scale .scale-title,
+html[lang="zh-Hant"] .scale-dark .scale .scale-title{
+  font-size:16px;
+  line-height:1.6;
+  letter-spacing:.1px;
+}
+html[lang="cn"] .scale-dark .scale .lab,
+html[lang="tw"] .scale-dark .scale .lab,
+html[lang="zh-CN"] .scale-dark .scale .lab,
+html[lang="zh-Hant"] .scale-dark .scale .lab{
+  font-size:12.5px;
+  line-height:1.7;
+  letter-spacing:.1px;
+}
 
 /* About page hero */
 .page-hero.about-hero{
