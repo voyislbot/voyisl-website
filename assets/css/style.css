@@ -2219,6 +2219,30 @@ html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle{
   color:#8a6d3b;
   font-weight:500;
 }
+html[lang="cn"] .page-hero.section-series-hero .section-hero-subtitle,
+html[lang="tw"] .page-hero.section-series-hero .section-hero-subtitle,
+html[lang="zh-CN"] .page-hero.section-series-hero .section-hero-subtitle,
+html[lang="zh-Hant"] .page-hero.section-series-hero .section-hero-subtitle{
+  max-width:590px;
+  margin:12px 0 0;
+  color:#e9b217;
+  font-size:13px;
+  font-weight:500;
+  line-height:1.78;
+  letter-spacing:.35px;
+  text-align:left;
+}
+html[lang="cn"] .page-hero.solutions-hero .product-hero-subtitle,
+html[lang="tw"] .page-hero.solutions-hero .product-hero-subtitle,
+html[lang="zh-CN"] .page-hero.solutions-hero .product-hero-subtitle,
+html[lang="zh-Hant"] .page-hero.solutions-hero .product-hero-subtitle{
+  max-width:520px;
+  margin:12px 0 0;
+  color:#8a6d3b;
+  font-size:13px;
+  line-height:1.7;
+  letter-spacing:.35px;
+}
 @media(max-width:760px){
   .page-hero.section-series-hero{
     aspect-ratio:auto;
@@ -2231,6 +2255,14 @@ html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle{
   .page-hero.section-series-hero .inner{width:100%}
   html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle,
   html[lang="en"] .page-hero.section-series-hero .section-hero-description{
+    max-width:100%;
+    font-size:12px;
+    line-height:1.72;
+  }
+  html[lang="cn"] .page-hero.section-series-hero .section-hero-subtitle,
+  html[lang="tw"] .page-hero.section-series-hero .section-hero-subtitle,
+  html[lang="zh-CN"] .page-hero.section-series-hero .section-hero-subtitle,
+  html[lang="zh-Hant"] .page-hero.section-series-hero .section-hero-subtitle{
     max-width:100%;
     font-size:12px;
     line-height:1.72;
@@ -2279,6 +2311,140 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   font-size:12.5px;
   line-height:1.7;
   letter-spacing:.1px;
+}
+
+/* Homepage company introduction */
+.home-page .home-about{
+  position:relative;
+  padding:82px 0 76px;
+  background:
+    linear-gradient(180deg,rgba(242,249,255,.52) 0%,rgba(242,249,255,.18) 38%,rgba(242,249,255,.16) 68%,rgba(241,248,255,.7) 100%),
+    url("../img/home-about-bg-20261109.png") center center / cover no-repeat;
+  border-bottom:1px solid rgba(205,220,234,.7);
+}
+.home-page .home-about>.wrap{display:flex;flex-direction:column;position:relative;z-index:1}
+.home-page .home-about .sec-head{
+  order:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:26px;
+}
+.home-page .home-about .sec-head h2{
+  order:1;
+  color:#20262c;
+  font-size:clamp(30px,3vw,42px);
+  letter-spacing:.6px;
+}
+.home-page .home-about .sec-head .en{
+  order:2;
+  margin-top:8px;
+  color:#707982;
+  font-size:15px;
+  font-weight:500;
+  letter-spacing:.8px;
+  text-transform:none;
+}
+.home-page .home-about .sec-head .bar{order:3;margin-top:18px;background:#e9b217}
+.home-page .home-about .about-grid{
+  order:2;
+  display:block;
+  max-width:1100px;
+  margin:0 auto;
+}
+.home-page .home-about .about-grid>div:first-child{
+  max-width:1040px;
+  margin:0 auto;
+  padding:0 18px;
+  text-align:center;
+}
+.home-page .home-about .about-visual{display:none}
+.home-page .home-about .about-grid h3{
+  margin:0 0 16px;
+  color:#252b31;
+  font-size:22px;
+  line-height:1.55;
+  letter-spacing:.4px;
+}
+.home-page .home-about .about-grid p{
+  margin:0;
+  color:#3f4851;
+  font-size:14.5px;
+  line-height:1.95;
+  text-align:justify;
+  text-justify:inter-ideograph;
+}
+.home-page .home-about .about-grid p+p{margin-top:12px}
+.home-page .about .about-more{order:3}
+.home-page .about .about-metrics{order:4}
+.home-page .tech .wrap,
+.home-page .agents .wrap,
+.home-page .news .wrap{display:flex;flex-direction:column}
+.home-page .tech .sec-head,
+.home-page .agents .sec-head,
+.home-page .news .sec-head{order:1}
+.home-page .tech .about-more{order:2;margin:22px auto 30px}
+.home-page .tech .platform-board{order:3}
+.home-page .agents>.wrap>p.reveal{order:2}
+.home-page .agents .about-more{order:3;margin:20px auto 30px}
+.home-page .agents .agents-grid{order:4}
+.home-page .news .about-more{order:2;margin:22px auto 30px}
+.home-page .news .news-list{order:3}
+.home-page .about-more{margin:24px auto 30px;text-align:center}
+.home-page .about-more a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:9px 24px;
+  border:0;
+  border-radius:999px;
+  background:#e9b217;
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:.45px;
+  text-decoration:none;
+  box-shadow:0 8px 22px rgba(233,178,23,.25);
+  transition:.25s;
+}
+.home-page .about-more a:hover{
+  color:#fff;
+  background:#cf9c0d;
+  border-color:transparent;
+  transform:translateY(-1px);
+}
+.home-page .home-about .about-metrics{margin-top:34px;gap:20px}
+.home-page .home-about .metric-card{
+  position:relative;
+  min-height:165px;
+  padding:22px 20px 20px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.72);
+  background:linear-gradient(145deg,rgba(255,255,255,.53),rgba(255,255,255,.26));
+  box-shadow:0 12px 32px rgba(48,80,110,.12);
+  -webkit-backdrop-filter:blur(16px) saturate(125%);
+  backdrop-filter:blur(16px) saturate(125%);
+}
+.home-page .home-about .metric-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg,#e9b217,#f4cf65);
+}
+.home-page .home-about .metric-card strong{color:#aa7600}
+.home-page .home-about .metric-card span{color:#57616b}
+.home-page .home-about .metric-card p{color:#333d46}
+@media(max-width:760px){
+  .home-page .home-about{padding:58px 0 54px;background-position:center center}
+  .home-page .home-about .sec-head h2{font-size:27px;line-height:1.35}
+  .home-page .home-about .sec-head .en{font-size:12.5px;line-height:1.6}
+  .home-page .home-about .about-grid>div:first-child{padding:0}
+  .home-page .home-about .about-grid h3{font-size:19px}
+  .home-page .home-about .about-grid p{font-size:13px;line-height:1.85;text-align:left}
+  .home-page .home-about .about-metrics{margin-top:26px;gap:14px}
+  .home-page .home-about .metric-card{min-height:145px}
 }
 
 /* About page hero */
