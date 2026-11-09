@@ -2061,3 +2061,85 @@ html[lang="en"] .metric-card strong.metric-stack{
   line-height:1.25;
   white-space:nowrap;
 }
+
+/* Solutions section hero and English-only VOYISL logo */
+.page-hero.solutions-hero{
+  min-height:400px;
+  display:flex;
+  align-items:center;
+  padding:112px 24px 58px;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 46%,rgba(255,255,255,.2) 74%,rgba(255,255,255,.04) 100%),
+    url("../img/solutions-banner-20261109.png") center center / cover no-repeat;
+}
+.page-hero.solutions-hero .bg{display:none}
+.page-hero.solutions-hero .inner{width:min(760px,100%);margin:0}
+.logo-img.logo-img-en{
+  height:30px;
+  max-width:240px;
+  object-fit:contain;
+}
+@media(max-width:760px){
+  .page-hero.solutions-hero{
+    min-height:310px;
+    padding:96px 20px 44px;
+    background-position:66% center;
+  }
+  .page-hero.solutions-hero .inner{width:100%}
+  .logo-img.logo-img-en{
+    height:25px;
+    max-width:190px;
+  }
+}
+
+@media(min-width:1025px) and (max-width:1180px){
+  html[lang="en"] .nav{
+    position:fixed;
+    inset:0 0 auto 0;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+    max-height:100vh;
+    overflow-y:auto;
+    padding:84px 24px 28px;
+    color:var(--ink);
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    transform:translateY(-100%);
+    transition:.35s;
+  }
+  html[lang="en"] .nav.open{transform:none}
+  html[lang="en"] .nav a,
+  html[lang="en"] .nav .has-drop>a{
+    width:100%;
+    padding:12px 0;
+    border-bottom:1px solid rgba(24,24,24,.07);
+  }
+  html[lang="en"] .nav .has-drop{width:100%}
+  html[lang="en"] .nav .drop{
+    position:static;
+    display:block;
+    min-width:0;
+    padding:0 0 8px 18px;
+    border:0;
+    background:transparent;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+  }
+  html[lang="en"] .nav .drop a{padding:10px 0}
+  html[lang="en"] .lang-switch{margin:18px 0 0}
+  html[lang="en"] .menu-btn{
+    display:block;
+    position:relative;
+    z-index:60;
+    width:42px;
+    height:42px;
+    color:var(--ink);
+    border:1px solid rgba(24,24,24,.08);
+    border-radius:50%;
+    background:rgba(255,255,255,.72);
+  }
+}
