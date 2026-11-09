@@ -2070,7 +2070,8 @@ html[lang="en"] .metric-card strong.metric-stack{
   padding:112px 24px 58px;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 46%,rgba(255,255,255,.2) 74%,rgba(255,255,255,.04) 100%),
-    url("../img/solutions-banner-20261109-v2.png") center center / cover no-repeat;
+    url("../img/solutions-banner-20261109-v2.png") center center / contain no-repeat;
+  background-color:#edf7ff;
 }
 .page-hero.solutions-hero .bg{display:none}
 .page-hero.solutions-hero .inner{width:min(520px,100%);margin:0}
@@ -2083,7 +2084,7 @@ html[lang="en"] .metric-card strong.metric-stack{
   .page-hero.solutions-hero{
     min-height:310px;
     padding:96px 20px 44px;
-    background-position:66% center;
+    background-position:center center;
   }
   .page-hero.solutions-hero .inner{width:100%}
   .logo-img.logo-img-en{
