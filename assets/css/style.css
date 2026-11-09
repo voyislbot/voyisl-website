@@ -2092,6 +2092,16 @@ html[lang="en"] .metric-card strong.metric-stack{
   font-size:13px;
   line-height:1.55;
 }
+html[lang="en"] .page-hero.solutions-hero .inner{
+  width:min(calc(52.6vw - 48px),1200px);
+}
+html[lang="en"] .page-hero.solutions-hero .hero-desc{
+  max-width:100%;
+  text-align:justify;
+  text-align-last:left;
+  text-justify:inter-word;
+  hyphens:auto;
+}
 .logo-img.logo-img-en{
   height:30px;
   max-width:240px;
@@ -2105,6 +2115,7 @@ html[lang="en"] .metric-card strong.metric-stack{
     background-position:center center;
   }
   .page-hero.solutions-hero .inner{width:100%}
+  html[lang="en"] .page-hero.solutions-hero .inner{width:100%}
   .logo-img.logo-img-en{
     height:25px;
     max-width:190px;
@@ -2140,6 +2151,15 @@ html[lang="en"] .metric-card strong.metric-stack{
   margin-top:12px;
   font-size:13px;
   line-height:1.55;
+}
+html[lang="en"] .page-hero.technology-hero .hero-desc,
+html[lang="en"] .page-hero.solutions-hero .hero-desc{
+  font-size:12px;
+  line-height:1.62;
+  text-align:justify;
+  text-align-last:left;
+  text-justify:inter-word;
+  hyphens:auto;
 }
 @media(max-width:760px){
   .page-hero.technology-hero{
