@@ -1356,6 +1356,7 @@ body{background:var(--bg)}
   text-align:left;
 }
 .page-hero .hero-desc{max-width:820px;margin:28px 0 0}
+html[lang="en"] .ir-page .page-hero h1{letter-spacing:.4px}
 .ir-page .page-hero .ir-hero-meta{justify-content:flex-start}
 .ir-page .page-hero .ir-hero-meta span{
   color:#555;
