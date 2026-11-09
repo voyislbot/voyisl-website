@@ -2199,6 +2199,11 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
     linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
     url("../img/investor-banner-20261109.png") center center / contain no-repeat;
 }
+.page-hero.news-hero{
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
+    url("../img/news-banner-20261109.png") center center / contain no-repeat;
+}
 html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle,
 html[lang="en"] .page-hero.section-series-hero .section-hero-description{
   max-width:590px;
@@ -2230,6 +2235,21 @@ html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle{
     font-size:12px;
     line-height:1.72;
   }
+}
+
+/* English positioning cards: two-edge alignment with a slightly smaller body size. */
+html[lang="en"] .scale-dark .scale .scale-title,
+html[lang="en"] .scale-dark .scale .lab{
+  width:100%;
+  text-align:justify;
+  text-align-last:left;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+html[lang="en"] .scale-dark .scale .lab{
+  font-size:12.5px;
+  line-height:1.7;
+  letter-spacing:.2px;
 }
 
 /* About page hero */
