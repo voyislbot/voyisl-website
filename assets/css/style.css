@@ -2327,7 +2327,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   display:flex;
   flex-direction:column;
   align-items:center;
-  margin-bottom:26px;
+  margin-bottom:16px;
 }
 .home-page .home-about .sec-head h2{
   order:1;
@@ -2344,7 +2344,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   letter-spacing:.8px;
   text-transform:none;
 }
-.home-page .home-about .sec-head .bar{order:3;margin-top:18px;background:#e9b217}
+.home-page .home-about .sec-head .bar{order:3;width:44px;height:13px;margin-top:16px;background:#e9b217;border-radius:999px;box-shadow:0 6px 16px rgba(234,179,23,.22)}
 .home-page .home-about .about-grid{
   order:3;
   display:block;
@@ -2359,7 +2359,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
 }
 .home-page .home-about .about-visual{display:none}
 .home-page .home-about .about-grid h3{
-  margin:0 0 16px;
+  margin:0 0 12px;
   color:#252b31;
   font-size:22px;
   line-height:1.55;
@@ -2374,7 +2374,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   text-justify:inter-ideograph;
 }
 .home-page .home-about .about-grid p+p{margin-top:12px}
-.home-page .about .about-more{order:2;margin:4px auto 30px}
+.home-page .about .about-more{order:2;margin:0 auto 20px}
 .home-page .about .about-metrics{order:4}
 .home-page .tech .wrap,
 .home-page .agents .wrap,
@@ -2382,13 +2382,18 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
 .home-page .tech .sec-head,
 .home-page .agents .sec-head,
 .home-page .news .sec-head{order:1}
-.home-page .tech .about-more{order:2;margin:22px auto 30px}
-.home-page .tech .platform-board{order:3}
+.home-page .tech .tech-showcase{order:2}
+.home-page .tech .about-more{order:3;margin:22px auto 30px}
+.home-page .tech .platform-board{order:4}
 .home-page .agents>.wrap>p.reveal{order:2}
 .home-page .agents .about-more{order:3;margin:20px auto 30px}
 .home-page .agents .agents-grid{order:4}
 .home-page .news .about-more{order:2;margin:22px auto 30px}
 .home-page .news .news-list{order:3}
+.home-page .home-about .sec-head .bar,
+.home-page .tech .sec-head .bar,
+.home-page .agents .sec-head .bar,
+.home-page .news .sec-head .bar{display:none}
 .home-page .about-more{margin:24px auto 30px;text-align:center}
 .home-page .about-more a{
   display:inline-flex;
@@ -2396,22 +2401,22 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   justify-content:center;
   min-height:40px;
   padding:9px 24px;
-  border:1px solid rgba(36,36,36,.1);
+  border:1px solid var(--gold);
   border-radius:999px;
-  background:#f4f4f1;
-  color:#8a6d3b;
+  background:var(--gold);
+  color:#fff;
   font-size:14px;
   font-weight:600;
   letter-spacing:.45px;
   text-decoration:none;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 8px 24px rgba(0,0,0,.04);
-  transition:.25s;
+  box-shadow:0 8px 22px rgba(234,179,23,.2);
+  transition:none;
 }
 .home-page .about-more a:hover{
   color:#fff;
-  background:#eab317;
-  border-color:#eab317;
-  transform:translateY(-1px);
+  background:var(--gold);
+  border-color:var(--gold);
+  transform:none;
 }
 .home-page .home-about .about-metrics{
   position:relative;
@@ -2432,7 +2437,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   transform:translateX(-50%);
   background:
     linear-gradient(180deg,#f7fafc 0%,rgba(247,250,252,.25) 16%,rgba(247,250,252,0) 38%,rgba(247,250,252,.12) 100%),
-    url("../img/home-about-bg-20261109.png") center center / cover no-repeat;
+    url("../img/home-about-bg-20261109.png") center top / cover no-repeat;
 }
 .home-page .home-about .metric-card{
   position:relative;
@@ -2440,13 +2445,13 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   padding:22px 20px 20px;
   overflow:hidden;
   border:1px solid rgba(255,255,255,.78);
-  background:linear-gradient(145deg,rgba(255,255,255,.46),rgba(255,255,255,.22));
+  background:linear-gradient(145deg,rgba(255,255,255,.34),rgba(255,255,255,.14));
   box-shadow:0 12px 32px rgba(48,80,110,.12);
   -webkit-backdrop-filter:blur(16px) saturate(125%);
   backdrop-filter:blur(16px) saturate(125%);
 }
 .home-page .home-about .metric-card::before{display:none}
-.home-page .home-about .metric-card strong{color:#8a6d3b}
+.home-page .home-about .metric-card strong{color:var(--gold)}
 .home-page .home-about .metric-card span{color:#57616b}
 .home-page .home-about .metric-card p{color:#333d46}
 @media(max-width:760px){
@@ -2458,6 +2463,102 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   .home-page .home-about .about-grid p{font-size:13px;line-height:1.85;text-align:left}
   .home-page .home-about .about-metrics{margin-top:0;gap:14px;padding:120px 0 42px}
   .home-page .home-about .metric-card{min-height:145px}
+}
+
+/* Bilingual section-head rhythm and static pill marker */
+html[lang="cn"] .sec-head,
+html[lang="tw"] .sec-head,
+html[lang="zh-CN"] .sec-head,
+html[lang="zh-Hant"] .sec-head{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:38px;
+}
+html[lang="cn"] .sec-head h2,
+html[lang="tw"] .sec-head h2,
+html[lang="zh-CN"] .sec-head h2,
+html[lang="zh-Hant"] .sec-head h2{
+  order:1;
+  margin-top:0;
+  color:#20262c;
+  font-size:clamp(30px,3vw,42px);
+  font-weight:500!important;
+  line-height:1.35;
+  letter-spacing:.6px;
+}
+html[lang="cn"] .sec-head .en,
+html[lang="tw"] .sec-head .en,
+html[lang="zh-CN"] .sec-head .en,
+html[lang="zh-Hant"] .sec-head .en{
+  order:2;
+  margin-top:8px;
+  color:#707982;
+  font-size:15px;
+  font-weight:500;
+  line-height:1.6;
+  letter-spacing:.8px;
+  text-transform:none;
+}
+html[lang="cn"] .sec-head .bar,
+html[lang="tw"] .sec-head .bar,
+html[lang="zh-CN"] .sec-head .bar,
+html[lang="zh-Hant"] .sec-head .bar{
+  order:3;
+  width:44px;
+  height:13px;
+  margin:16px auto 0;
+  border-radius:999px;
+  background:var(--gold);
+  box-shadow:0 6px 16px rgba(234,179,23,.22);
+}
+html[lang="en"] .sec-head{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:34px;
+}
+html[lang="en"] .sec-head h2{
+  order:1;
+  margin-top:0;
+  color:#20262c;
+  font-size:clamp(27px,2.5vw,36px);
+  font-weight:500!important;
+  line-height:1.3;
+  letter-spacing:.15px;
+}
+html[lang="en"] .sec-head .en{
+  order:2;
+  margin-top:8px;
+  color:#707982;
+  font-size:11.5px;
+  font-weight:500;
+  line-height:1.55;
+  letter-spacing:2.2px;
+  text-transform:uppercase;
+}
+html[lang="en"] .sec-head .bar{
+  order:3;
+  width:38px;
+  height:11px;
+  margin:14px auto 0;
+  border-radius:999px;
+  background:var(--gold);
+  box-shadow:0 5px 14px rgba(234,179,23,.2);
+}
+/* Homepage technology showcase image */
+.home-page .tech-showcase{
+  max-width:1120px;
+  margin:0 auto 34px;
+  overflow:hidden;
+  border-radius:18px;
+  background:#eaf4ff;
+  box-shadow:0 18px 46px rgba(47,80,112,.12);
+}
+.home-page .tech-showcase img{
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
 }
 
 /* About page hero */
