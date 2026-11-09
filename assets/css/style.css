@@ -2177,13 +2177,11 @@ html[lang="en"] .metric-card strong.metric-stack{
   .page-hero.about-hero .inner{width:100%}
 }
 
-.page-hero.solutions-hero,
-.page-hero.technology-hero,
-.page-hero.about-hero{margin-top:76px}
+.hero,
+.page-hero{margin-top:76px}
 @media(max-width:760px){
-  .page-hero.solutions-hero,
-  .page-hero.technology-hero,
-  .page-hero.about-hero{margin-top:68px}
+  .hero,
+  .page-hero{margin-top:68px}
 }
 
 @media(min-width:1025px) and (max-width:1180px){
