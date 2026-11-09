@@ -1,0 +1,72 @@
+name: Deploy Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.html"
+      - "assets/**"
+      - ".nojekyll"
+      - ".github/workflows/deploy-pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare lightweight static site
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site
+          find . -maxdepth 1 -type f -name '*.html' -exec cp --parents {} _site/ \;
+          cp -R en zh-Hant assets _site/
+          touch _site/.nojekyll
+
+          # Legacy source-image folders are not referenced by the live site.
+          rm -rf \
+            "_site/assets/img/01_首页" \
+            "_site/assets/img/02_关于寅家" \
+            "_site/assets/img/03_技术路线" \
+            "_site/assets/img/04_通用智能体" \
+            "_site/assets/img/05_新闻中心" \
+            "_site/assets/img/06_ESG" \
+            "_site/assets/img/07_加入我们" \
+            _site/assets/img/originals \
+            _site/assets/img/join/originals
+          rm -f \
+            _site/assets/video/corporate-tvc.mp4 \
+            _site/assets/video/hero-anim.mp4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
