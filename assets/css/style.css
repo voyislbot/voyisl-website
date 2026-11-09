@@ -388,12 +388,14 @@ ul{list-style:none}
 
 /* ===== agents ===== */
 .agents-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:10px}
-.agent{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:30px 24px;text-align:center;transition:.3s;position:relative;overflow:hidden}
+.agent{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:0;text-align:center;transition:.3s;position:relative;overflow:hidden;display:flex;flex-direction:column;height:100%}
 .agent::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:.35s}
 .agent:hover{box-shadow:var(--shadow);border-color:var(--gold-light);transform:translateY(-4px)}
 .agent:hover::before{transform:scaleX(1)}
-.agent .ico{width:56px;height:56px;border-radius:14px;background:#f6f1e7;display:grid;place-items:center;margin:0 auto 16px}
-.agent .ico svg{width:28px;height:28px;stroke:var(--gold-dark)}
+.agent-copy{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28px 24px 22px}
+.agent-media{margin-top:auto;aspect-ratio:3 / 2;overflow:hidden;background:#eaf4ff}
+.agent-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.agent:hover .agent-media img{transform:scale(1.025)}
 .agent h4{font-size:17px;letter-spacing:1px;margin-bottom:10px}
 .agent p{color:var(--muted);font-size:13.5px;line-height:1.8}
 @media(max-width:1024px){.agents-grid{grid-template-columns:repeat(2,1fr)}}
