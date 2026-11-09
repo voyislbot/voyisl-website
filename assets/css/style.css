@@ -2113,14 +2113,14 @@ html[lang="en"] .metric-card strong.metric-stack{
 
 /* Technology Platform hero */
 .page-hero.technology-hero{
-  aspect-ratio:24 / 5;
+  aspect-ratio:4 / 1;
   min-height:0;
   display:flex;
   align-items:center;
   padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.78) 44%,rgba(255,255,255,.16) 72%,rgba(255,255,255,.04) 100%),
-    url("../img/technology-platform-banner-20261109.png") center center / contain no-repeat;
+    url("../img/technology-platform-banner-20261109-v2.png") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.technology-hero .bg{display:none}
