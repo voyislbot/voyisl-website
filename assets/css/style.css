@@ -2173,6 +2173,65 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
   .page-hero.technology-hero .inner{width:100%}
 }
 
+/* ESG, Join Us and Investor Relations section hero images */
+.page-hero.section-series-hero{
+  aspect-ratio:4 / 1;
+  min-height:0;
+  display:flex;
+  align-items:center;
+  padding:76px 24px 0;
+  background-color:#edf7ff;
+}
+.page-hero.section-series-hero .bg{display:none}
+.page-hero.section-series-hero .inner{width:min(590px,100%);margin:0}
+.page-hero.esg-hero{
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
+    url("../img/esg-banner-20261109.png") center center / contain no-repeat;
+}
+.page-hero.join-hero{
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
+    url("../img/join-banner-20261109.png") center center / contain no-repeat;
+}
+.page-hero.investor-hero{
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
+    url("../img/investor-banner-20261109.png") center center / contain no-repeat;
+}
+html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle,
+html[lang="en"] .page-hero.section-series-hero .section-hero-description{
+  max-width:590px;
+  margin:12px 0 0;
+  color:#606060;
+  font-size:13px;
+  font-weight:400;
+  line-height:1.78;
+  letter-spacing:.25px;
+  text-align:left;
+}
+html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle{
+  color:#8a6d3b;
+  font-weight:500;
+}
+@media(max-width:760px){
+  .page-hero.section-series-hero{
+    aspect-ratio:auto;
+    min-height:0;
+    align-items:flex-start;
+    padding:calc(25vw + 24px) 20px 32px;
+    background-position:center top;
+    background-size:100% auto;
+  }
+  .page-hero.section-series-hero .inner{width:100%}
+  html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle,
+  html[lang="en"] .page-hero.section-series-hero .section-hero-description{
+    max-width:100%;
+    font-size:12px;
+    line-height:1.72;
+  }
+}
+
 /* About page hero */
 .page-hero.about-hero{
   aspect-ratio:4 / 1;
