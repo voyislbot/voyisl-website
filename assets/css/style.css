@@ -410,10 +410,11 @@ ul{list-style:none}
 .solution-hub-card:hover::before{transform:scaleY(1)}
 .solution-hub-card .solution-card-main{display:block;color:inherit}
 .solution-hub-card .solution-card-media{
-  margin:24px -28px 0;
-  aspect-ratio:3 / 2;
+  margin:22px 0 0;
+  aspect-ratio:16 / 8;
   overflow:hidden;
   border-top:1px solid rgba(24,24,24,.06);
+  border-radius:12px;
   background:#eaf4ff;
 }
 .solution-hub-card .solution-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
@@ -2083,7 +2084,7 @@ html[lang="en"] .metric-card strong.metric-stack{
   padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 46%,rgba(255,255,255,.2) 74%,rgba(255,255,255,.04) 100%),
-    url("../img/solutions-banner-20261109-v3.png") center center / contain no-repeat;
+    url("../img/solutions-banner-20261109-v3.webp") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.solutions-hero .bg{display:none}
@@ -2143,7 +2144,7 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
   padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.78) 44%,rgba(255,255,255,.16) 72%,rgba(255,255,255,.04) 100%),
-    url("../img/technology-platform-banner-20261109-v2.png") center center / contain no-repeat;
+    url("../img/technology-platform-banner-20261109-v2.webp") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.technology-hero .bg{display:none}
@@ -2198,22 +2199,22 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
 .page-hero.esg-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
-    url("../img/esg-banner-20261109.png") center center / contain no-repeat;
+    url("../img/esg-banner-20261109.webp") center center / contain no-repeat;
 }
 .page-hero.join-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
-    url("../img/join-banner-20261109.png") center center / contain no-repeat;
+    url("../img/join-banner-20261109.webp") center center / contain no-repeat;
 }
 .page-hero.investor-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
-    url("../img/investor-banner-20261109.png") center center / contain no-repeat;
+    url("../img/investor-banner-20261109.webp") center center / contain no-repeat;
 }
 .page-hero.news-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.52) 61%,rgba(255,255,255,.04) 84%),
-    url("../img/news-banner-20261109.png") center center / contain no-repeat;
+    url("../img/news-banner-20261109.webp") center center / contain no-repeat;
 }
 html[lang="en"] .page-hero.section-series-hero .section-hero-subtitle,
 html[lang="en"] .page-hero.section-series-hero .section-hero-description{
@@ -2448,7 +2449,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   transform:translateX(-50%);
   background:
     linear-gradient(180deg,#f7fafc 0%,rgba(247,250,252,.25) 16%,rgba(247,250,252,0) 38%,rgba(247,250,252,.12) 100%),
-    url("../img/home-about-bg-20261109.png") center top / cover no-repeat;
+    url("../img/home-about-bg-20261109.webp") center top / cover no-repeat;
 }
 .home-page .home-about .metric-card{
   position:relative;
@@ -2581,7 +2582,7 @@ html[lang="en"] .sec-head .bar{
   padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.86) 0%,rgba(255,255,255,.48) 46%,rgba(255,255,255,.04) 78%),
-    url("../img/about-banner-20261109.png") center center / contain no-repeat;
+    url("../img/about-banner-20261109.webp") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.about-hero .bg{display:none}
