@@ -2093,6 +2093,27 @@ html[lang="en"] .metric-card strong.metric-stack{
   }
 }
 
+/* Technology Platform hero */
+.page-hero.technology-hero{
+  min-height:400px;
+  display:flex;
+  align-items:center;
+  padding:112px 24px 58px;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.78) 44%,rgba(255,255,255,.16) 72%,rgba(255,255,255,.04) 100%),
+    url("../img/technology-platform-banner-20261109.png") center center / contain no-repeat;
+  background-color:#edf7ff;
+}
+.page-hero.technology-hero .bg{display:none}
+.page-hero.technology-hero .inner{width:min(580px,100%);margin:0}
+@media(max-width:760px){
+  .page-hero.technology-hero{
+    min-height:310px;
+    padding:96px 20px 44px;
+  }
+  .page-hero.technology-hero .inner{width:100%}
+}
+
 @media(min-width:1025px) and (max-width:1180px){
   html[lang="en"] .nav{
     position:fixed;
