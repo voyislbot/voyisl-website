@@ -1795,12 +1795,6 @@ h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
 .hero .hero-award{margin-top:14px;font-size:12px}
 .hero .hero-desc{max-width:700px;margin-top:14px;font-size:13px;line-height:1.78}
 
-/* Blend the long homepage visual into the page on both edges. */
-.agents-img.full:has(.home-mid-d){
-  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 88%,transparent 100%);
-  mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 88%,transparent 100%);
-}
-
 /* Blend the VT building banner into the section above it. */
 .join-banner:not(:has(.banner-cap)){
   -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 13%,#000 100%);
@@ -1817,10 +1811,6 @@ h1,h2,h3,h4,h5,b,strong{font-weight:600!important}
   }
   .hero .hero-award{margin-top:10px;font-size:11.5px}
   .hero .hero-desc{margin-top:10px;font-size:12px;line-height:1.7}
-  .agents-img.full:has(.home-mid-d){
-    -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 9%,#000 91%,transparent 100%);
-    mask-image:linear-gradient(to bottom,transparent 0,#000 9%,#000 91%,transparent 100%);
-  }
 }
 
 /* ===== 2026-11-06 heading refinement and clean hero image ===== */
@@ -2401,7 +2391,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
 }
 .home-page .home-about .sec-head .bar{order:3;width:44px;height:13px;margin-top:16px;background:#e9b217;border-radius:999px;box-shadow:0 6px 16px rgba(234,179,23,.22)}
 .home-page .home-about .about-grid{
-  order:3;
+  order:2;
   display:block;
   max-width:1100px;
   margin:0 auto;
@@ -2429,7 +2419,7 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   text-justify:inter-ideograph;
 }
 .home-page .home-about .about-grid p+p{margin-top:12px}
-.home-page .about .about-more{order:2;margin:0 auto 20px}
+.home-page .about .about-more{order:3;margin:0 auto 20px}
 .home-page .about .about-metrics{order:4}
 .home-page .tech .wrap,
 .home-page .agents .wrap,
