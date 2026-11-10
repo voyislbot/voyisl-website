@@ -47,6 +47,65 @@
   }
 })();
 
+function buildMobileRoadmaps() {
+  document.querySelectorAll(".roadmap-scroll").forEach(function (wrapper) {
+    if (wrapper.querySelector(".roadmap-mobile")) return;
+    var table = wrapper.querySelector(".roadmap-table");
+    if (!table) return;
+
+    var headerCells = Array.from(table.querySelectorAll("thead th")).slice(1);
+    var bodyRows = Array.from(table.querySelectorAll("tbody tr"));
+    if (!headerCells.length || !bodyRows.length) return;
+
+    var mobile = document.createElement("div");
+    mobile.className = "roadmap-mobile";
+
+    headerCells.forEach(function (header, columnIndex) {
+      var card = document.createElement("section");
+      card.className = "roadmap-mobile-card";
+
+      var title = document.createElement("h3");
+      title.textContent = header.textContent.trim();
+      card.appendChild(title);
+
+      var list = document.createElement("dl");
+      list.className = "roadmap-mobile-list";
+
+      bodyRows.forEach(function (row) {
+        var rowLabel = row.querySelector("th");
+        var rowValue = row.children[columnIndex + 1];
+        if (!rowLabel || !rowValue) return;
+
+        var item = document.createElement("div");
+        item.className = "roadmap-mobile-row";
+
+        var term = document.createElement("dt");
+        term.textContent = rowLabel.textContent.trim();
+
+        var description = document.createElement("dd");
+        Array.from(rowValue.childNodes).forEach(function (node) {
+          description.appendChild(node.cloneNode(true));
+        });
+
+        item.appendChild(term);
+        item.appendChild(description);
+        list.appendChild(item);
+      });
+
+      card.appendChild(list);
+      mobile.appendChild(card);
+    });
+
+    wrapper.appendChild(mobile);
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", buildMobileRoadmaps);
+} else {
+  buildMobileRoadmaps();
+}
+
   var vbox = document.querySelector(".video-box");
   var vbtn = document.querySelector(".video-box .play-btn");
   var vvid = document.querySelector(".video-box video");
