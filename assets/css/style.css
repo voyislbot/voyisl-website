@@ -544,7 +544,7 @@ ul{list-style:none}
 .roadmap-table thead th:first-child{width:132px;text-align:left;color:var(--gold-light);letter-spacing:2px}
 .roadmap-table tbody th{width:132px;background:#f6f1e7;color:var(--gold-dark);font-size:14px;letter-spacing:1px;position:sticky;left:0;z-index:1}
 .roadmap-table td{color:#555;font-size:13.5px;line-height:1.75}
-.roadmap-table .status{display:inline-block;padding:4px 10px;border-radius:999px;background:#f6f1e7;color:var(--gold-dark);font-weight:700;font-size:12.5px}
+.roadmap-table .status{display:inline;padding:0;border-radius:0;background:none;color:var(--gold-dark);font-weight:700;font-size:12.5px}
 .roadmap-table ul{display:grid;gap:7px}
 .roadmap-table li{position:relative;padding-left:13px}
 .roadmap-table li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--gold)}
@@ -2535,6 +2535,8 @@ html[lang="en"] .about-intro-grid .reveal>p{
   line-height:1.95;
   text-justify:inter-word;
 }
+html[lang="en"] .about-intro-grid{align-items:stretch}
+html[lang="en"] .about-intro-grid .about-visual{height:100%;min-height:0;align-self:stretch}
 .about-metrics-page .metric-card{
   align-items:flex-start;
   justify-content:flex-start;
@@ -2827,7 +2829,8 @@ body:not(.home-page) .news-list{grid-template-columns:repeat(4,minmax(0,1fr))}
   width:100%;
   height:auto;
   aspect-ratio:16 / 9;
-  object-fit:contain;
+  object-fit:cover;
+  object-position:center;
   border-radius:0;
   flex:none;
   background:#f6f4f0;
