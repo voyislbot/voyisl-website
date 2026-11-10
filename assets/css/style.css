@@ -2822,9 +2822,10 @@ body:not(.home-page) .news-list{grid-template-columns:repeat(4,minmax(0,1fr))}
   width:100%;
   height:auto;
   aspect-ratio:16 / 9;
-  object-fit:cover;
+  object-fit:contain;
   border-radius:0;
   flex:none;
+  background:#f6f4f0;
 }
 .news-item .date{
   display:flex;
