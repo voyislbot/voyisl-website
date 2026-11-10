@@ -135,7 +135,8 @@ ul{list-style:none}
 .honor{border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:28px 22px;text-align:center;background:rgba(255,255,255,.03);transition:.3s}
 .honor:hover{background:rgba(234,179,23,.12);border-color:var(--gold)}
 .honor svg{width:38px;height:38px;stroke:var(--gold);margin:0 auto 14px}
-.honor .honor-icon{display:block;width:38px;height:38px;margin:0 auto 14px;object-fit:contain}
+.honor-icon-wrap{display:flex;align-items:center;justify-content:center;width:100%;height:38px;margin:0 auto 18px}
+.honor .honor-icon{display:block;width:38px;height:38px;margin:0;object-fit:contain;object-position:center}
 .honor b{display:block;font-size:17px;letter-spacing:1px;margin-bottom:6px}
 .honor span{font-size:12.5px;color:#b9b3a8;line-height:1.6}
 /* ===== contact ===== */
