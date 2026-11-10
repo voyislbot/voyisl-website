@@ -439,6 +439,9 @@ ul{list-style:none}
 .solution-hub-card ul{min-height:85px;align-content:start}
 .solution-hub-card li,.solution-detail-card li{position:relative;padding-left:16px;color:#555;font-size:13.5px;line-height:1.7}
 .solution-hub-card li::before,.solution-detail-card li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+@media(min-width:761px){
+  .solution-hub-card .solution-card-main:not(:has(ul)) .solution-card-media{margin-top:123px}
+}
 .hub-product-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .solution-card-footer{display:flex;flex-direction:column;gap:18px;width:100%;margin-top:auto}
 .solution-card-footer .hub-product-tags{margin-top:0}
@@ -467,6 +470,7 @@ ul{list-style:none}
 .application-card-visual .ico{display:none}
 .application-card-visual .ico svg{width:24px;height:24px}
 .application-card-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:max-content;margin:-2px auto 4px;padding:9px 14px;border:1px solid rgba(234,179,23,.35);border-radius:999px;background:#fbf7eb;color:var(--gold-dark);font-size:12.5px;font-weight:700;letter-spacing:.35px;line-height:1.3;text-align:center;transition:.25s}
+.application-card-link[hidden]{display:none!important}
 .application-card-link span{font-size:15px;line-height:1;transition:transform .25s}
 .application-card-link:hover,.application-card-link:focus-visible{border-color:var(--gold);background:#fff5d6;box-shadow:0 7px 18px rgba(234,179,23,.14);outline:none}
 .application-card-link:hover span,.application-card-link:focus-visible span{transform:translateX(3px)}
@@ -505,6 +509,38 @@ ul{list-style:none}
 .solution-delivery-card>span{display:block;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2px;margin-bottom:10px}
 .solution-delivery-card h3{position:relative;z-index:1;font-size:21px;letter-spacing:.6px;margin-bottom:11px;color:var(--ink)}
 .solution-delivery-card p{position:relative;z-index:1;color:var(--muted);font-size:14px;line-height:1.9}
+@media(min-width:761px){
+  .solution-delivery-grid:has(> .solution-delivery-card:only-child){display:block}
+  .solution-delivery-grid:has(> .solution-delivery-card:only-child)> .solution-delivery-card{
+    display:grid;
+    grid-template-columns:minmax(240px,.78fr) minmax(0,1.42fr);
+    column-gap:52px;
+    align-items:start;
+    padding:38px 44px 40px;
+  }
+  .solution-delivery-grid:has(> .solution-delivery-card:only-child)> .solution-delivery-card>span{
+    grid-column:1;
+    grid-row:1;
+    margin-bottom:8px;
+  }
+  .solution-delivery-grid:has(> .solution-delivery-card:only-child)> .solution-delivery-card>h3{
+    grid-column:1;
+    grid-row:2;
+    margin:0;
+    font-size:23px;
+    line-height:1.45;
+  }
+  .solution-delivery-grid:has(> .solution-delivery-card:only-child)> .solution-delivery-card>p{
+    grid-column:2;
+    grid-row:1 / span 2;
+    align-self:center;
+    margin:0;
+    padding-left:42px;
+    border-left:1px solid rgba(234,179,23,.24);
+    font-size:14.5px;
+    line-height:1.95;
+  }
+}
 .product-line-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:18px}
 .product-line-card{position:relative;display:flex;align-items:center;min-height:228px;border-radius:16px;background:#eaf4fb;overflow:hidden;transition:.35s;isolation:isolate}
 .product-line-card:hover{transform:translateY(-4px);box-shadow:0 16px 38px rgba(var(--brand-dark-rgb),.2)}
@@ -2523,6 +2559,13 @@ html[lang="zh-Hant"] .scale-dark .scale .lab{
   max-height:none;
   object-fit:contain;
 }
+.home-page .agents-img.full.home-solutions-divider img,
+.home-page .agents-img.full.home-contact-divider img{
+  aspect-ratio:auto;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+}
 
 .about-intro-grid .reveal>p{
   font-size:14px;
@@ -3031,4 +3074,151 @@ body:not(.home-page) .news-list{grid-template-columns:repeat(4,minmax(0,1fr))}
   .news-item .news-img{aspect-ratio:16/9;object-fit:cover;object-position:center}
   .news-item h4{font-size:14.5px;line-height:1.5}
   .news-item .date b{font-size:18px}
+
+  /* Mobile-only compact rhythm: images stay clean, copy moves below them. */
+  .page-hero:not(.solutions-hero):not(.technology-hero):not(.section-series-hero):not(.about-hero):not(.privacy-hero){
+    min-height:0;
+    aspect-ratio:auto;
+    padding:26px 18px 30px;
+    background:linear-gradient(135deg,#f8fbfe 0%,#edf6fd 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .page-hero:not(.solutions-hero):not(.technology-hero):not(.section-series-hero):not(.about-hero):not(.privacy-hero) .bg{display:none}
+  .page-hero:not(.solutions-hero):not(.technology-hero):not(.section-series-hero):not(.about-hero):not(.privacy-hero) .inner{
+    width:100%;
+    margin:0;
+    padding-top:0;
+  }
+  .page-hero .inner{
+    padding-top:18px;
+  }
+  .page-hero h1,
+  .page-hero.solutions-hero h1,
+  .page-hero.technology-hero h1{
+    font-size:23px;
+    line-height:1.34;
+    letter-spacing:.2px;
+  }
+  html[lang="en"] .page-hero h1{
+    font-size:21px;
+    line-height:1.36;
+  }
+  .page-hero .en{
+    padding:4px 8px;
+    font-size:9.5px;
+    line-height:1.45;
+    letter-spacing:1.4px;
+  }
+  .page-hero .bar{
+    width:32px;
+    height:2px;
+    margin-top:12px;
+  }
+  .page-hero .inner p:not(.en),
+  .page-hero .hero-desc,
+  .page-hero .intro,
+  .page-hero .section-hero-subtitle,
+  .page-hero .product-hero-subtitle{
+    margin-top:8px;
+    font-size:12px;
+    line-height:1.7;
+  }
+
+  html[lang="cn"] .sec-head h2,
+  html[lang="tw"] .sec-head h2,
+  html[lang="zh-CN"] .sec-head h2,
+  html[lang="zh-Hant"] .sec-head h2,
+  html[lang="en"] .sec-head h2,
+  .home-page .home-about .sec-head h2{
+    font-size:21px!important;
+    line-height:1.42;
+    letter-spacing:.25px;
+  }
+  html[lang="en"] .sec-head h2{
+    font-size:20px!important;
+    letter-spacing:.05px;
+  }
+  .sec-head{
+    margin-bottom:26px;
+  }
+  .sec-head .en,
+  html[lang="cn"] .sec-head .en,
+  html[lang="tw"] .sec-head .en,
+  html[lang="zh-CN"] .sec-head .en,
+  html[lang="zh-Hant"] .sec-head .en,
+  html[lang="en"] .sec-head .en{
+    margin-top:6px;
+    font-size:11px;
+    line-height:1.55;
+    letter-spacing:.65px;
+  }
+  .home-page .home-about .about-grid h2{
+    font-size:21px!important;
+    line-height:1.45;
+    letter-spacing:.2px;
+  }
+  .esg-topic-body h2{
+    font-size:21px;
+    line-height:1.4;
+    letter-spacing:1px;
+  }
+  .esg-topic-body>p,
+  .esg-points li{
+    font-size:13px;
+    line-height:1.82;
+    text-align:left;
+  }
+  .about-grid p,
+  .about-approach p,
+  .tech-intro,
+  .sensing-intro,
+  .sensing-item,
+  .esg-intro,
+  .esg-note,
+  .news-detail p,
+  .news-detail li,
+  .privacy-doc p,
+  .privacy-doc li{
+    font-size:13px;
+    line-height:1.85;
+    text-align:left;
+  }
+
+  /* Background-image accordions: show the image first, then controls below. */
+  .fold-head.fold-bg{
+    min-height:0;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:12px;
+    padding:calc((100vw - 36px) * 9 / 16 + 16px) 16px 16px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background-color:#fff!important;
+    background-position:center top!important;
+    background-repeat:no-repeat!important;
+    background-size:100% auto!important;
+    box-shadow:none;
+  }
+  .fold-head.fold-bg::before{display:none}
+  .fold-head.fold-bg .fold-title{
+    position:static;
+    margin:0;
+    padding:0;
+    border:0;
+    border-radius:0;
+    background:none;
+    color:var(--ink);
+    font-size:16px;
+    line-height:1.45;
+    letter-spacing:.6px;
+    backdrop-filter:none;
+  }
+  .fold-head.fold-bg .fold-icon{
+    position:static;
+    margin:0;
+    width:32px;
+    height:32px;
+    background:var(--gold);
+  }
 }
