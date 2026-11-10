@@ -2537,33 +2537,44 @@ html[lang="en"] .about-intro-grid .reveal>p{
   text-align:left;
 }
 
+.home-page .honors{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(250,252,254,.9) 0%,rgba(250,252,254,.72) 24%,rgba(247,250,253,.5) 62%,rgba(247,250,253,.82) 100%),
+    url("../img/home-honor-section-bg-20261110.jpg") center center / cover no-repeat;
+}
+.home-page .honors .sec-head,
+.home-page .honors .honor-grid{
+  position:relative;
+  z-index:1;
+}
 .home-page .honors .honor{
   position:relative;
   isolation:isolate;
   overflow:hidden;
+  color:var(--ink);
   border-color:rgba(255,255,255,.72);
-  background:
-    linear-gradient(145deg,rgba(20,56,83,.22) 0%,rgba(20,56,83,.58) 100%),
-    url("../img/home-honor-card-bg-20261110.jpg") center center / cover no-repeat;
-  box-shadow:0 12px 30px rgba(24,57,83,.16);
+  background:linear-gradient(145deg,rgba(255,255,255,.7),rgba(255,255,255,.3));
+  box-shadow:0 12px 32px rgba(48,80,110,.12);
+  -webkit-backdrop-filter:blur(16px) saturate(125%);
+  backdrop-filter:blur(16px) saturate(125%);
 }
 .home-page .honors .honor:hover{
   border-color:var(--gold);
-  background:
-    linear-gradient(145deg,rgba(20,56,83,.28) 0%,rgba(20,56,83,.66) 100%),
-    url("../img/home-honor-card-bg-20261110.jpg") center center / cover no-repeat;
+  background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(255,255,255,.46));
+  box-shadow:0 16px 36px rgba(48,80,110,.16);
 }
 .home-page .honors .honor svg{
-  stroke:#f0bc35;
-  filter:drop-shadow(0 3px 8px rgba(10,30,48,.48));
+  stroke:var(--gold);
+  filter:drop-shadow(0 3px 8px rgba(234,179,23,.2));
 }
 .home-page .honors .honor b{
-  color:#fff;
-  text-shadow:0 2px 7px rgba(10,30,48,.72);
+  color:var(--ink);
 }
 .home-page .honors .honor span{
-  color:rgba(255,255,255,.92);
-  text-shadow:0 1px 5px rgba(10,30,48,.62);
+  color:#58636d;
 }
 .home-page .home-about .about-metrics{
   position:relative;
@@ -2792,4 +2803,65 @@ html[lang="en"] .sec-head .bar{
     border-radius:50%;
     background:rgba(255,255,255,.72);
   }
+}
+
+/* 2026-11-10: image-first news cards, three across on the homepage and four on the news index. */
+.news-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+body:not(.home-page) .news-list{grid-template-columns:repeat(4,minmax(0,1fr))}
+.news-item{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  padding:0;
+  overflow:hidden;
+}
+.news-item .news-img{
+  grid-area:auto;
+  width:100%;
+  height:auto;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  border-radius:0;
+  flex:none;
+}
+.news-item .date{
+  display:flex;
+  align-items:baseline;
+  gap:6px;
+  width:auto;
+  flex:none;
+  border-right:0;
+  padding:16px 18px 0;
+  text-align:left;
+}
+.news-item .date b{
+  font-size:14px;
+  line-height:1.1;
+  color:var(--gold-dark);
+}
+.news-item .date span{font-size:12px;color:#7a7f84}
+.news-item>div:last-child{
+  grid-area:auto;
+  justify-content:flex-start;
+  padding:7px 18px 20px;
+}
+.news-item h4{
+  font-size:16px;
+  line-height:1.55;
+  margin:0;
+}
+@media(max-width:1100px){
+  body:not(.home-page) .news-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  .news-list,
+  body:not(.home-page) .news-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:640px){
+  .news-list,
+  body:not(.home-page) .news-list{grid-template-columns:1fr}
+  .news-item{display:flex}
+  .news-item .news-img{width:100%;height:auto}
+  .news-item .date{padding:14px 18px 0}
+  .news-item .date+div{padding:7px 18px 20px}
 }
