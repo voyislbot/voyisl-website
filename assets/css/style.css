@@ -460,6 +460,8 @@ ul{list-style:none}
 .application-detail-head .ico{margin-bottom:22px}
 .application-card-visual{position:relative;aspect-ratio:16/9;margin-bottom:22px;border-radius:16px;overflow:hidden;background:#e9e6df}
 .application-card-visual>img{width:100%;height:100%;display:block;object-fit:cover;transition:none}
+.application-card-visual.vulcan-visual{aspect-ratio:3/2;background:linear-gradient(135deg,#d9e8f5 0%,#f3f8fc 50%,#d7e5f1 100%)}
+.application-card-visual.vulcan-visual>img{object-fit:contain}
 .application-detail-card:hover .application-card-visual>img{transform:none}
 .application-card-visual::after{display:none}
 .application-card-visual .ico{display:none}
