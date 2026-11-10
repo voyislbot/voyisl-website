@@ -419,7 +419,7 @@ ul{list-style:none}
 .solution-hub-card:hover::before{transform:scaleY(1)}
 .solution-hub-card .solution-card-main{display:block;color:inherit}
 .solution-hub-card .solution-card-media{
-  margin:22px 0 0;
+  margin:22px 0 20px;
   aspect-ratio:16 / 8;
   overflow:hidden;
   border-top:1px solid rgba(24,24,24,.06);
@@ -2246,7 +2246,7 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
 .solutions-hub-page .page-hero.solutions-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.68) 42%,rgba(255,255,255,.12) 72%,rgba(255,255,255,.02) 100%),
-    url("../img/home-solutions-divider-20261110-v2.jpg") center center / contain no-repeat;
+    url("../img/home-solutions-divider-20261110-v2.webp") center center / contain no-repeat;
 }
 @media(max-width:760px){
   .page-hero.technology-hero .section-hero-subtitle,
@@ -2545,7 +2545,7 @@ html[lang="en"] .about-intro-grid .reveal>p{
   overflow:hidden;
   background:
     linear-gradient(180deg,rgba(250,252,254,.9) 0%,rgba(250,252,254,.72) 24%,rgba(247,250,253,.5) 62%,rgba(247,250,253,.82) 100%),
-    url("../img/home-honor-section-bg-20261110.jpg") center center / cover no-repeat;
+    url("../img/home-honor-section-bg-20261110.webp") center center / cover no-repeat;
 }
 .home-page .honors .sec-head,
 .home-page .honors .honor-grid{
@@ -2597,7 +2597,7 @@ html[lang="en"] .about-intro-grid .reveal>p{
   transform:translateX(-50%);
   background:
     linear-gradient(180deg,#f7fafc 0%,rgba(247,250,252,.25) 16%,rgba(247,250,252,0) 38%,rgba(247,250,252,.12) 100%),
-    url("../img/home-about-bg-20261110.webp") center top / cover no-repeat;
+    url("../img/home-about-bg-20261110.webp?v=20261110perf") center top / cover no-repeat;
 }
 .home-page .home-about .metric-card{
   position:relative;
