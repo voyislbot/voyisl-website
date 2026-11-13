@@ -21,6 +21,7 @@ html{scroll-behavior:smooth}
 .sec,[id]{scroll-margin-top:84px}
 body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
+img:where([width][height]){height:auto}
 svg{fill:none!important;stroke:var(--gold-dark);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
