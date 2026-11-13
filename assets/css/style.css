@@ -2176,7 +2176,7 @@ html[lang="en"] .metric-card strong.metric-stack{
   padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 46%,rgba(255,255,255,.2) 74%,rgba(255,255,255,.04) 100%),
-    url("../img/solutions-banner-20261109-v3.webp") center center / contain no-repeat;
+    url("../img/solutions-banner-20261113.jpg") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.solutions-hero .bg{display:none}
@@ -2294,7 +2294,7 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
 .solutions-hub-page .page-hero.solutions-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.68) 42%,rgba(255,255,255,.12) 72%,rgba(255,255,255,.02) 100%),
-    url("../img/solutions-banner-20261109-v3.webp") center center / contain no-repeat;
+    url("../img/solutions-banner-20261113.jpg") center center / contain no-repeat;
 }
 @media(max-width:760px){
   .page-hero.technology-hero .section-hero-subtitle,
@@ -2995,8 +2995,8 @@ body:not(.home-page) .news-list{grid-template-columns:repeat(4,minmax(0,1fr))}
     background-repeat:no-repeat;
     background-size:cover;
   }
-  .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261109-v3.webp")}
-  .solutions-hub-page .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261109-v3.webp")}
+  .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261113.jpg")}
+  .solutions-hub-page .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261113.jpg")}
   .page-hero.technology-hero::before{background-image:url("../img/technology-platform-banner-20261109-v2.webp")}
   .page-hero.esg-hero::before{background-image:url("../img/esg-banner-20261109.webp")}
   .page-hero.join-hero::before{background-image:url("../img/join-banner-20261109.webp")}
