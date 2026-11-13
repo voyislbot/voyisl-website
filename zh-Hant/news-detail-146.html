@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GB 47955新規來襲，寅家科技技術框架解讀新規要求</title>
 <meta name="description" content="6月27日，國內首部針對L2組合駕駛輔助系統的強制性安全標準GB 47955—2026《智能網聯汽車組合駕駛輔助系統安全要求》正式發佈。新規之下，輔助駕駛將邁入“安全標準時代”。一套真正可靠的輔助駕駛…">
-<link rel="stylesheet" href="../assets/css/style.css?v=125">
+<link rel="preload" as="image" href="../assets/img/news-banner-20261109.webp" media="(min-width: 761px)" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="../assets/img/news-banner-20261109-mobile-20261113.webp" media="(max-width: 760px)" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261113perf">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="logo" href="../index.html">
-      <img class="logo-img" src="../assets/img/logo-brand-20261106-v2.webp" alt="VOYISL">
+      <img class="logo-img" src="../assets/img/logo-brand-20261106-v2.webp" alt="VOYISL" width="1000" height="207" decoding="async">
     </a>
     <nav class="nav" id="mainNav"><a href="index.html">首頁</a><a href="about.html">關於寅家</a><span class="has-drop"><a href="technology-platform.html">技術平台</a><span class="drop"><a href="technology-software.html">通用軟件架構</a><a href="technology-modules.html">軟硬件一體化模組</a></span></span><span class="has-drop"><a href="solutions.html">解決方案及產品</a><span class="drop"><a href="solutions-driving.html">智能駕駛</a><a href="solutions-cockpit.html">智能座艙</a><a href="solutions-applications.html">其他智能應用</a></span></span><a href="news.html" class="active">企業動態</a><a href="esg.html">ESG</a><a href="join.html">加入我們</a><span class="has-drop"><a href="investor-relations.html">投資者關係</a><span class="drop ir-drop"><a href="investor-disclosure.html">信息披露</a><a href="investor-governance.html">企業管治</a><a href="investor-contact.html">投資者關係聯絡</a></span></span><div class="lang-switch"><a href="../index.html">简</a><a href="index.html" class="on">繁</a><a href="../en/index.html">EN</a></div></nav>
     <button class="menu-btn" aria-label="Menu">&#9776;</button>
@@ -26,7 +28,7 @@
 </section><section class="sec">
   <div class="wrap">
     <a class="news-back" href="news.html">← 返回新聞列表</a>
-    <article class="news-detail"><p class="news-lead">6月27日，國內首部針對L2組合駕駛輔助系統的強制性安全標準GB 47955—2026《智能網聯汽車組合駕駛輔助系統安全要求》正式發佈。新規之下，輔助駕駛將邁入“安全標準時代”。一套真正可靠的輔助駕駛系統需要具備什麼能力?我們邀請寅家工程師聊聊新國標背後的技術挑戰。</p><figure class="news-cover"><img loading="lazy" src="../assets/img/news/146/gb47955-bus-centered-20261113.webp" alt="GB 47955新規來襲，寅家科技技術框架解讀新規要求"></figure><h3 class="news-question">Q1：新規相比過往行業規範，新增了哪些核心安全約束？</h3><p class="news-byline">--感知算法工程師</p><p>新規建立了一個統一的安全准入標尺，不再只看重功能數量，對整個系統全鏈路安全能力提出了硬性約束，尤其是感知層面的規範變化特別突出。</p><p>要求系統不能只滿足單純地採集畫面，對感知模塊提出了更高要求，需要完成目標分類、風險分級預判等，需要為後端決策輸出可信的環境數據。</p><p>在我看來，在整個新規架構下，感知板塊對於環境理解的穩定性至關重要，會成為產品是否能合規落地的關鍵門檻。</p><h3 class="news-question">Q2：新規針對工況越界、突發險情制定了嚴格的風險退出機制，寅家的決策框架是依靠怎樣的運行邏輯完成風險處置的?</h3><p class="news-byline">--決策算法工程師</p><p>決策層一旦發覺道路風險上升、傳感器識別效果下降，或是車子駛出了可用路段，系統不會直接強制關掉輔助功能。</p><p>根據寅家VT-Vulcan®分層式的決策管控設計，它會啟動一個循序漸進的處置流程:先多級提醒，再平緩調整車速，再慢慢收回輔助操控權限。決策單元會進行約束車輛的動作，來規避一些急剎、誤踩油門、猛打方向盤這類比較危險的動作。</p><h3 class="news-question">Q3：為什麼新規要求L2車型必須加強駕駛員監測?</h3><p class="news-byline">--感知算法工程師</p><p>因為輔助駕駛再智能，駕駛員依然是安全責任主體，法規裡也再次明確了這一點。所以車輛在智能功能設計上，不僅要關注道路情況，也要關注駕駛員的狀態。寅家打造的DMS駕駛員監控系統，通過視覺感知技術，對駕駛員頭部姿態、視線方向、手部狀態可以進行綜合識別，能夠更好地為輔助駕駛提供更可靠的人機協同支持。</p><h3 class="news-question">Q4：未來輔助駕駛競爭，比拼的是什麼?</h3><p class="news-byline">--平臺架構工程師</p><p>我覺得未來競爭其實不只是看車輛有多少功能，更重要的是看整個系統是否完整、穩定以及安全。圍繞智能感知(VT-Sensing和VT-Navi)、智能決策與控制技術（VT-Vulcan®），寅家持續打造面向量產的輔助駕駛解決方案，讓智能汽車不僅“看得見”，更能夠“看得懂"“做得穩".。</p></article>
+    <article class="news-detail"><p class="news-lead">6月27日，國內首部針對L2組合駕駛輔助系統的強制性安全標準GB 47955—2026《智能網聯汽車組合駕駛輔助系統安全要求》正式發佈。新規之下，輔助駕駛將邁入“安全標準時代”。一套真正可靠的輔助駕駛系統需要具備什麼能力?我們邀請寅家工程師聊聊新國標背後的技術挑戰。</p><figure class="news-cover"><img loading="lazy" src="../assets/img/news/146/gb47955-bus-centered-20261113.webp" alt="GB 47955新規來襲，寅家科技技術框架解讀新規要求" width="2048" height="1152" decoding="async"></figure><h3 class="news-question">Q1：新規相比過往行業規範，新增了哪些核心安全約束？</h3><p class="news-byline">--感知算法工程師</p><p>新規建立了一個統一的安全准入標尺，不再只看重功能數量，對整個系統全鏈路安全能力提出了硬性約束，尤其是感知層面的規範變化特別突出。</p><p>要求系統不能只滿足單純地採集畫面，對感知模塊提出了更高要求，需要完成目標分類、風險分級預判等，需要為後端決策輸出可信的環境數據。</p><p>在我看來，在整個新規架構下，感知板塊對於環境理解的穩定性至關重要，會成為產品是否能合規落地的關鍵門檻。</p><h3 class="news-question">Q2：新規針對工況越界、突發險情制定了嚴格的風險退出機制，寅家的決策框架是依靠怎樣的運行邏輯完成風險處置的?</h3><p class="news-byline">--決策算法工程師</p><p>決策層一旦發覺道路風險上升、傳感器識別效果下降，或是車子駛出了可用路段，系統不會直接強制關掉輔助功能。</p><p>根據寅家VT-Vulcan®分層式的決策管控設計，它會啟動一個循序漸進的處置流程:先多級提醒，再平緩調整車速，再慢慢收回輔助操控權限。決策單元會進行約束車輛的動作，來規避一些急剎、誤踩油門、猛打方向盤這類比較危險的動作。</p><h3 class="news-question">Q3：為什麼新規要求L2車型必須加強駕駛員監測?</h3><p class="news-byline">--感知算法工程師</p><p>因為輔助駕駛再智能，駕駛員依然是安全責任主體，法規裡也再次明確了這一點。所以車輛在智能功能設計上，不僅要關注道路情況，也要關注駕駛員的狀態。寅家打造的DMS駕駛員監控系統，通過視覺感知技術，對駕駛員頭部姿態、視線方向、手部狀態可以進行綜合識別，能夠更好地為輔助駕駛提供更可靠的人機協同支持。</p><h3 class="news-question">Q4：未來輔助駕駛競爭，比拼的是什麼?</h3><p class="news-byline">--平臺架構工程師</p><p>我覺得未來競爭其實不只是看車輛有多少功能，更重要的是看整個系統是否完整、穩定以及安全。圍繞智能感知(VT-Sensing和VT-Navi)、智能決策與控制技術（VT-Vulcan®），寅家持續打造面向量產的輔助駕駛解決方案，讓智能汽車不僅“看得見”，更能夠“看得懂"“做得穩".。</p></article>
   </div>
 </section>
 <footer class="site-footer">
@@ -35,7 +37,7 @@
       <div>
         <h5>寅家科技</h5>
         <p>掃描二維碼，關注寅家科技官方公眾號</p>
-        <img loading="lazy" class="footer-qr" src="../assets/img/qr-wechat.webp" alt="QR">
+        <img loading="lazy" class="footer-qr" src="../assets/img/qr-wechat.webp" alt="QR" width="430" height="430" decoding="async">
       </div>
       <div>
         <h5>快速導覽</h5><a href="index.html">首頁</a><a href="about.html">關於寅家</a><a href="solutions.html">解決方案及產品</a><a href="technology-platform.html">技術平台</a><a href="news.html">企業動態</a><a href="esg.html">ESG</a><a href="join.html">加入我們</a><a href="investor-relations.html">投資者關係</a><a href="privacy-policy.html">隱私政策</a></div>
@@ -47,6 +49,6 @@
     </div>
   </div>
 </footer>
-<script src="../assets/js/main.js?v=67"></script>
+<script src="../assets/js/main.js?v=20261113perf"></script>
 </body>
 </html>

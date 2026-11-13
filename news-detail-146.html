@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GB 47955新规来袭，寅家科技技术框架解读新规要求</title>
 <meta name="description" content="6月27日，国内首部针对L2组合驾驶辅助系统的强制性安全标准GB 47955—2026《智能网联汽车组合驾驶辅助系统安全要求》正式发布。新规之下，辅助驾驶将迈入“安全标准时代”。一套真正可靠的辅助驾驶…">
-<link rel="stylesheet" href="assets/css/style.css?v=125">
+<link rel="preload" as="image" href="assets/img/news-banner-20261109.webp" media="(min-width: 761px)" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/news-banner-20261109-mobile-20261113.webp" media="(max-width: 760px)" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css?v=20261113perf">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="logo" href="index.html">
-      <img class="logo-img" src="assets/img/logo-brand-20261106-v2.webp" alt="VOYISL">
+      <img class="logo-img" src="assets/img/logo-brand-20261106-v2.webp" alt="VOYISL" width="1000" height="207" decoding="async">
     </a>
     <nav class="nav" id="mainNav"><a href="index.html">首页</a><a href="about.html">关于寅家</a><span class="has-drop"><a href="technology-platform.html">技术平台</a><span class="drop"><a href="technology-software.html">通用软件架构</a><a href="technology-modules.html">软硬件一体化模组</a></span></span><span class="has-drop"><a href="solutions.html">解决方案及产品</a><span class="drop"><a href="solutions-driving.html">智能驾驶</a><a href="solutions-cockpit.html">智能座舱</a><a href="solutions-applications.html">其他智能应用</a></span></span><a href="news.html" class="active">企业动态</a><a href="esg.html">ESG</a><a href="join.html">加入我们</a><span class="has-drop"><a href="investor-relations.html">投资者关系</a><span class="drop ir-drop"><a href="investor-disclosure.html">信息披露</a><a href="investor-governance.html">企业管治</a><a href="investor-contact.html">投资者关系联络</a></span></span><div class="lang-switch"><a href="index.html" class="on">简</a><a href="zh-Hant/index.html">繁</a><a href="en/index.html">EN</a></div></nav>
     <button class="menu-btn" aria-label="Menu">&#9776;</button>
@@ -27,7 +29,7 @@
 <section class="sec">
   <div class="wrap">
     <a class="news-back" href="news.html">← 返回新闻列表</a>
-    <article class="news-detail"><p class="news-lead">6月27日，国内首部针对L2组合驾驶辅助系统的强制性安全标准GB 47955—2026《智能网联汽车组合驾驶辅助系统安全要求》正式发布。新规之下，辅助驾驶将迈入“安全标准时代”。一套真正可靠的辅助驾驶系统需要具备什么能力?我们邀请寅家工程师聊聊新国标背后的技术挑战。</p><figure class="news-cover"><img loading="lazy" src="assets/img/news/146/gb47955-bus-centered-20261113.webp" alt="GB 47955新规来袭，寅家科技技术框架解读新规要求"></figure><h3 class="news-question">Q1：新规相比过往行业规范，新增了哪些核心安全约束？</h3><p class="news-byline">--感知算法工程师</p><p>新规建立了一个统一的安全准入标尺，不再只看重功能数量，对整个系统全链路安全能力提出了硬性约束，尤其是感知层面的规范变化特别突出。</p><p>要求系统不能只满足单纯地采集画面，对感知模块提出了更高要求，需要完成目标分类、风险分级预判等，需要为后端决策输出可信的环境数据。</p><p>在我看来，在整个新规架构下，感知板块对于环境理解的稳定性至关重要，会成为产品是否能合规落地的关键门槛。</p><h3 class="news-question">Q2：新规针对工况越界、突发险情制定了严格的风险退出机制，寅家的决策框架是依靠怎样的运行逻辑完成风险处置的?</h3><p class="news-byline">--决策算法工程师</p><p>决策层一旦发觉道路风险上升、传感器识别效果下降，或是车子驶出了可用路段，系统不会直接强制关掉辅助功能。</p><p>根据寅家VT-Vulcan®分层式的决策管控设计，它会启动一个循序渐进的处置流程:先多级提醒，再平缓调整车速，再慢慢收回辅助操控权限。决策单元会进行约束车辆的动作，来规避一些急刹、误踩油门、猛打方向盘这类比较危险的动作。</p><h3 class="news-question">Q3：为什么新规要求L2车型必须加强驾驶员监测?</h3><p class="news-byline">--感知算法工程师</p><p>因为辅助驾驶再智能，驾驶员依然是安全责任主体，法规里也再次明确了这一点。所以车辆在智能功能设计上，不仅要关注道路情况，也要关注驾驶员的状态。寅家打造的DMS驾驶员监控系统，通过视觉感知技术，对驾驶员头部姿态、视线方向、手部状态可以进行综合识别，能够更好地为辅助驾驶提供更可靠的人机协同支持。</p><h3 class="news-question">Q4：未来辅助驾驶竞争，比拼的是什么?</h3><p class="news-byline">--平台架构工程师</p><p>我觉得未来竞争其实不只是看车辆有多少功能，更重要的是看整个系统是否完整、稳定以及安全。围绕智能感知(VT-Sensing和VT-Navi)、智能决策与控制技术（VT-Vulcan®），寅家持续打造面向量产的辅助驾驶解决方案，让智能汽车不仅“看得见”，更能够“看得懂"“做得稳".。</p></article>
+    <article class="news-detail"><p class="news-lead">6月27日，国内首部针对L2组合驾驶辅助系统的强制性安全标准GB 47955—2026《智能网联汽车组合驾驶辅助系统安全要求》正式发布。新规之下，辅助驾驶将迈入“安全标准时代”。一套真正可靠的辅助驾驶系统需要具备什么能力?我们邀请寅家工程师聊聊新国标背后的技术挑战。</p><figure class="news-cover"><img loading="lazy" src="assets/img/news/146/gb47955-bus-centered-20261113.webp" alt="GB 47955新规来袭，寅家科技技术框架解读新规要求" width="2048" height="1152" decoding="async"></figure><h3 class="news-question">Q1：新规相比过往行业规范，新增了哪些核心安全约束？</h3><p class="news-byline">--感知算法工程师</p><p>新规建立了一个统一的安全准入标尺，不再只看重功能数量，对整个系统全链路安全能力提出了硬性约束，尤其是感知层面的规范变化特别突出。</p><p>要求系统不能只满足单纯地采集画面，对感知模块提出了更高要求，需要完成目标分类、风险分级预判等，需要为后端决策输出可信的环境数据。</p><p>在我看来，在整个新规架构下，感知板块对于环境理解的稳定性至关重要，会成为产品是否能合规落地的关键门槛。</p><h3 class="news-question">Q2：新规针对工况越界、突发险情制定了严格的风险退出机制，寅家的决策框架是依靠怎样的运行逻辑完成风险处置的?</h3><p class="news-byline">--决策算法工程师</p><p>决策层一旦发觉道路风险上升、传感器识别效果下降，或是车子驶出了可用路段，系统不会直接强制关掉辅助功能。</p><p>根据寅家VT-Vulcan®分层式的决策管控设计，它会启动一个循序渐进的处置流程:先多级提醒，再平缓调整车速，再慢慢收回辅助操控权限。决策单元会进行约束车辆的动作，来规避一些急刹、误踩油门、猛打方向盘这类比较危险的动作。</p><h3 class="news-question">Q3：为什么新规要求L2车型必须加强驾驶员监测?</h3><p class="news-byline">--感知算法工程师</p><p>因为辅助驾驶再智能，驾驶员依然是安全责任主体，法规里也再次明确了这一点。所以车辆在智能功能设计上，不仅要关注道路情况，也要关注驾驶员的状态。寅家打造的DMS驾驶员监控系统，通过视觉感知技术，对驾驶员头部姿态、视线方向、手部状态可以进行综合识别，能够更好地为辅助驾驶提供更可靠的人机协同支持。</p><h3 class="news-question">Q4：未来辅助驾驶竞争，比拼的是什么?</h3><p class="news-byline">--平台架构工程师</p><p>我觉得未来竞争其实不只是看车辆有多少功能，更重要的是看整个系统是否完整、稳定以及安全。围绕智能感知(VT-Sensing和VT-Navi)、智能决策与控制技术（VT-Vulcan®），寅家持续打造面向量产的辅助驾驶解决方案，让智能汽车不仅“看得见”，更能够“看得懂"“做得稳".。</p></article>
   </div>
 </section>
 <footer class="site-footer">
@@ -36,7 +38,7 @@
       <div>
         <h5>寅家科技</h5>
         <p>扫描二维码，关注寅家科技官方公众号</p>
-        <img loading="lazy" class="footer-qr" src="assets/img/qr-wechat.webp" alt="QR">
+        <img loading="lazy" class="footer-qr" src="assets/img/qr-wechat.webp" alt="QR" width="430" height="430" decoding="async">
       </div>
       <div>
         <h5>快速导航</h5><a href="index.html">首页</a><a href="about.html">关于寅家</a><a href="solutions.html">解决方案及产品</a><a href="technology-platform.html">技术平台</a><a href="news.html">企业动态</a><a href="esg.html">ESG</a><a href="join.html">加入我们</a><a href="investor-relations.html">投资者关系</a><a href="privacy-policy.html">隐私政策</a></div>
@@ -48,6 +50,6 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/main.js?v=67"></script>
+<script src="assets/js/main.js?v=20261113perf"></script>
 </body>
 </html>

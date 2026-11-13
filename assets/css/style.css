@@ -163,7 +163,7 @@ ul{list-style:none}
 .footer-grid p{color:#a9a39a;line-height:2}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#8d877e}
 /* ===== reveal ===== */
-.reveal{opacity:0;transform:translateY(26px);transition:.7s}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .35s ease,transform .45s ease}
 .reveal.in{opacity:1;transform:none}
 /* ===== responsive ===== */
 @media(max-width:1024px){
@@ -2176,7 +2176,7 @@ html[lang="en"] .metric-card strong.metric-stack{
   padding:76px 24px 0;
   background:
     linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 46%,rgba(255,255,255,.2) 74%,rgba(255,255,255,.04) 100%),
-    url("../img/solutions-banner-20261113.jpg") center center / contain no-repeat;
+    url("../img/solutions-banner-20261113-perf-20261113.webp") center center / contain no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.solutions-hero .bg{display:none}
@@ -2294,7 +2294,7 @@ html[lang="en"] .page-hero.solutions-hero .hero-desc{
 .solutions-hub-page .page-hero.solutions-hero{
   background:
     linear-gradient(90deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.68) 42%,rgba(255,255,255,.12) 72%,rgba(255,255,255,.02) 100%),
-    url("../img/solutions-banner-20261113.jpg") center center / contain no-repeat;
+    url("../img/solutions-banner-20261113-perf-20261113.webp") center center / contain no-repeat;
 }
 @media(max-width:760px){
   .page-hero.technology-hero .section-hero-subtitle,
@@ -2812,7 +2812,7 @@ html[lang="en"] .sec-head .bar{
   display:flex;
   align-items:center;
   padding:76px 24px 0;
-  background:url("../img/privacy-policy-banner-20261110.png") center center / cover no-repeat;
+  background:url("../img/privacy-policy-banner-20261110-perf-20261113.webp") center center / cover no-repeat;
   background-color:#edf7ff;
 }
 .page-hero.privacy-hero .bg{display:none}
@@ -2995,17 +2995,17 @@ body:not(.home-page) .news-list{grid-template-columns:repeat(4,minmax(0,1fr))}
     background-repeat:no-repeat;
     background-size:cover;
   }
-  .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261113.jpg")}
-  .solutions-hub-page .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261113.jpg")}
-  .page-hero.technology-hero::before{background-image:url("../img/technology-platform-banner-20261109-v2.webp")}
-  .page-hero.esg-hero::before{background-image:url("../img/esg-banner-20261109.webp")}
-  .page-hero.join-hero::before{background-image:url("../img/join-banner-20261109.webp")}
-  .page-hero.investor-hero::before{background-image:url("../img/investor-banner-20261109.webp")}
-  .page-hero.news-hero::before{background-image:url("../img/news-banner-20261109.webp")}
-  .page-hero.about-hero::before{background-image:url("../img/about-banner-20261110.webp")}
+  .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261113-mobile-20261113.webp")}
+  .solutions-hub-page .page-hero.solutions-hero::before{background-image:url("../img/solutions-banner-20261113-mobile-20261113.webp")}
+  .page-hero.technology-hero::before{background-image:url("../img/technology-platform-banner-20261109-v2-mobile-20261113.webp")}
+  .page-hero.esg-hero::before{background-image:url("../img/esg-banner-20261109-mobile-20261113.webp")}
+  .page-hero.join-hero::before{background-image:url("../img/join-banner-20261109-mobile-20261113.webp")}
+  .page-hero.investor-hero::before{background-image:url("../img/investor-banner-20261109-mobile-20261113.webp")}
+  .page-hero.news-hero::before{background-image:url("../img/news-banner-20261109-mobile-20261113.webp")}
+  .page-hero.about-hero::before{background-image:url("../img/about-banner-20261110-mobile-20261113.webp")}
   .page-hero.privacy-hero::before{
     aspect-ratio:4 / 1;
-    background-image:url("../img/privacy-policy-banner-20261110.png");
+    background-image:url("../img/privacy-policy-banner-20261110-mobile-20261113.webp");
     background-size:100% auto;
   }
   .page-hero .inner,
