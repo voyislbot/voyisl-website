@@ -598,6 +598,7 @@ ul{list-style:none}
 .roadmap-table .group-label{display:block;color:var(--ink);font-weight:700;margin-bottom:5px}
 .roadmap-note{max-width:980px;margin:18px auto 0;color:#8d877e;font-size:12.5px;line-height:1.8}
 .driving-ref{font-size:.62em;line-height:0;margin-left:2px;color:var(--gold-dark)}
+.solution-hub-card .card-link .driving-ref,.btn .driving-ref{color:inherit}
 .driving-footnote{max-width:980px;margin:22px auto 30px;padding:0 24px;color:#8d877e;font-size:12.5px;line-height:1.8}
 @media(max-width:760px){.driving-footnote{padding:0 26px;margin-top:18px;font-size:12px;line-height:1.7}}
 .product-detail-block{margin-top:56px;padding-top:30px;border-top:1px solid var(--line)}
